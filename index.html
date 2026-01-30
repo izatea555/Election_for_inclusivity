@@ -70,6 +70,8 @@
         .border-dem { border-left: 6px solid #00ADEF; }
         .border-tst { border-left: 6px solid #7C3AED; }
         .border-utn { border-left: 6px solid #1E1B4B; }
+        .border-kt { border-left: 5px solid #B59410; }
+        .border-eco { border-left: 5px solid #15803D; }
 
         .badge {
             display: inline-block;
@@ -234,6 +236,41 @@
                                     <div><strong>ฐานข้อมูล:</strong>บูรณาการฐานข้อมูลกลุ่มเปราะบาง (Big Data) เพื่อส่งมอบความช่วยเหลือได้รวดเร็วและไม่ซ้ำซ้อน</div>
                                 </td>
                             </tr>
+                            <tr class="border-kt">
+                                <th scope="row" class="font-bold">กล้าธรรม</th>
+                                <td class="font-semibold text-indigo-900">ศุภวิชญ์ จันทร์เสถียร</td>
+                                <td class="text-center">
+                                    <span class="badge badge-pwd">คนพิการ (ร่างกาย)</span>
+                                </td>
+                                <td>
+                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานด้านบริหารจัดการข้อมูลกลาง (Big Data) เพื่อการกระจายงบประมาณช่วยเหลือให้ถึงมือ</p>
+                                </td>
+                                <td class="text-slate-500">สวัสดิการแบบมีส่วนร่วม</td>
+                                <td>
+                                    <div><strong>การมีส่วนร่วม:</strong>ผลักดันให้คนพิการมีบทบาทในคณะกรรมการชุดต่างๆ ของท้องถิ่นเพื่อกำหนดงบประมาณเอง</div>
+                                    <div><strong>อาชีพ:</strong>สนับสนุนวิสาหกิจเพื่อสังคม (SE) ที่บริหารงานโดยคนพิการให้เข้าถึงแหล่งทุนได้ง่ายขึ้น</div>
+                                    <div><strong>สิทธิ:</strong>เน้นนโยบาย "ความเท่าเทียมในโอกาส" มากกว่าการรับบริจาคเพื่อสร้างศักดิ์ศรีความเป็นมนุษย์</div>
+                                </td>
+                            </tr>
+                            <tr class="border-eco">
+                                <th scope="row" class="font-bold">เศรษฐกิจ</th>
+                                <td class="font-semibold text-indigo-900">ส่งศักดิ์ ฉัตรชูสกุล</td>
+                                <td class="text-center">
+                                    <span class="badge badge-pwd">คนพิการ (ร่างกาย)</span>
+                                </td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>จุดแข็ง:</strong> ผู้สมัคร ส.ส. บัญชีรายชื่อลำดับที่ 6 (ลำดับต้นของพรรค)
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">ให้พื้นที่คนพิการในลำดับความสำคัญสูง</p>
+                                </td>
+                                <td class="text-slate-500">เศรษฐกิจฐานรากคนพิการ</td>
+                                <td>
+                                    <div><strong>เศรษฐกิจ:</strong>นโยบาย "คนพิการสร้างชาติ" สนับสนุนการเข้าถึงตลาดค้าขายดิจิทัลและแหล่งเงินทุนดอกเบี้ยต่ำ</div>
+                                    <div><strong>ชุมชน:</strong>พัฒนาศูนย์พัฒนาอาชีพคนพิการในระดับอำเภอเพื่อให้คนพิการไม่ต้องย้ายถิ่นฐานเข้ากรุงเทพฯ</div>
+                                    <div><strong>การศึกษา:</strong>ทุนการศึกษาพิเศษสำหรับคนพิการในสาขาที่ตลาดแรงงานสมัยใหม่ต้องการ (Skill Re-training)</div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -257,6 +294,8 @@
                     <div class="flex items-center"><span class="w-3 h-3 bg-[#00ADEF] mr-2 rounded"></span>พรรคประชาธิปัตย์</div>
                     <div class="flex items-center"><span class="w-3 h-3 bg-[#7C3AED] mr-2 rounded"></span>ไทยสร้างไทย</div>
                     <div class="flex items-center"><span class="w-3 h-3 bg-[#1E1B4B] mr-2 rounded"></span>รวมไทยสร้างชาติ</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#B59410] mr-2 rounded"></span>กล้าธรรม</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#15803D] mr-2 rounded"></span>เศรษฐกิจ</div>
                 </div>
             </div>
         </section>
@@ -292,7 +331,7 @@
             const ctxBar = document.getElementById('allowanceChart').getContext('2d');
             
             // Auto-wrap labels for better display on small screens
-            const labels = ['ประชาชน', 'ภูมิใจไทย', 'เพื่อไทย', 'ประชาธิปัตย์', 'ไทยสร้างไทย', 'รทสช.'];
+            const labels = ['ประชาชน', 'ภูมิใจไทย', 'เพื่อไทย', 'ประชาธิปัตย์', 'ไทยสร้างไทย', 'รทสช.', 'กล้าธรรม', 'เศรษฐกิจ'];
             
             new Chart(ctxBar, {
                 type: 'bar',
@@ -300,14 +339,16 @@
                     labels: labels,
                     datasets: [{
                         label: 'เพดานเบี้ยรายเดือน (บาท)',
-                        data: [2000, 800, 3000, 1600, 3000, 2000],
+                        data: [2000, 800, 3000, 1600, 3000, 2000, 800, 800],
                         backgroundColor: [
                             '#F97316', 
                             '#2D3E94', 
                             '#DC2626', 
                             '#00ADEF', 
                             '#7C3AED', 
-                            '#1E1B4B'
+                            '#1E1B4B',
+                            '#B59410',
+                            '#15803D'
                         ],
                         borderRadius: 6,
                         maxBarThickness: 45
@@ -326,6 +367,10 @@
                             callbacks: {
                                 label: function(context) {
                                     if (context.label === 'ภูมิใจไทย') return 'ข้อเสนอเน้นแก้กฎหมาย/เงินกู้';
+                                    return `เสนอ: ${context.parsed.y} บาท/เดือน`;
+                                    if (context.label === 'กล้าธรรม') return 'สวัสดิการแบบมีส่วนร่วม';
+                                    return `เสนอ: ${context.parsed.y} บาท/เดือน`;
+                                    if (context.label === 'เศรษฐกิจ') return 'เศรษฐกิจฐานรากคนพิการ';
                                     return `เสนอ: ${context.parsed.y} บาท/เดือน`;
                                 }
                             }
