@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลนโยบายและทีมงานเพื่อคนพิการ เลือกตั้ง 8 กุมภาพันธ์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+        .bg-deep { background-color: #0F172A; }
+        
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.07);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            height: 450px;
+        }
+
+        .policy-table th {
+            background-color: #1E293B;
+            color: white;
+            padding: 1rem;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.85rem;
+            vertical-align: middle;
+        }
+        .policy-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #F1F5F9;
+            vertical-align: top;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* Party Identities */
+        .border-pp { border-left: 6px solid #F97316; }
+        .border-bjt { border-left: 6px solid #2D3E94; }
+        .border-pt { border-left: 6px solid #DC2626; }
+        .border-dem { border-left: 6px solid #00ADEF; }
+        .border-tst { border-left: 6px solid #7C3AED; }
+        .border-utn { border-left: 6px solid #1E1B4B; }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #1E1B4B;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        .skip-link:focus { top: 0; }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+        }
+        .badge-pwd { background-color: #DCFCE7; color: #15803D; border: 1px solid #86EFAC; }
+        .badge-rep { background-color: #F1F5F9; color: #475569; border: 1px solid #CBD5E1; }
+        
+        .highlight-team {
+            background-color: #FEFCE8;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+            border: 1px dashed #FDE047;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">ข้ามไปยังตารางข้อมูล</a>
+
+    <header class="bg-deep text-white py-10 px-6" role="banner">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">ข้อมูลนโยบายและทีมงานเพื่อคนพิการ</h1>
+            <p class="text-slate-400 text-lg">วิเคราะห์รายพรรคการเมืองสำหรับการเลือกตั้ง 8 กุมภาพันธ์</p>
+        </div>
+    </header>
+
+    <main id="main-content" class="max-w-[99%] mx-auto p-2 md:p-8 space-y-10" role="main">
+
+        <!-- DATA TABLE -->
+        <section class="space-y-6">
+            <div class="border-l-4 border-slate-600 pl-4">
+                <h2 class="text-2xl font-bold text-slate-800">เปรียบเทียบทีมงานและนโยบาย</h2>
+            </div>
+
+            <div class="card overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[1400px] policy-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w-32">พรรค</th>
+                                <th scope="col" class="w-44">หัวหอกนโยบาย</th>
+                                <th scope="col" class="w-36">สถานะ</th>
+                                <th scope="col" class="w-64">ความโดดเด่นของทีม / ประสบการณ์</th>
+                                <th scope="col" class="w-48">นโยบายการเงิน</th>
+                                <th scope="col">ยุทธศาสตร์เชิงโครงสร้าง</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-700">
+                            <tr class="border-pp">
+                                <th scope="row" class="font-bold">พรรคประชาชน</th>
+                                <td class="font-semibold text-orange-600">อรรถพล ศรีชิษณุวรานนท์</td>
+                                <td><span class="badge badge-pwd">คนพิการ (ร่างกาย)</span></td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>ทีมงานหลัก:</strong> มีคนพิการร่วมเป็นคณะทำงานฝ่ายนโยบาย และเครือข่ายคนพิการระดับพื้นที่ (IL)
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">ทำงานใกล้ชิดกับเครือข่ายภาคประชาชนและกลุ่มนักเคลื่อนไหวสิทธิคนพิการมานานกว่า 10 ปี</p>
+                                </td>
+                                <td class="font-bold">1,200 (ถ้วนหน้า) / 2,000 (รุนแรง)</td>
+                                <td>ธนาคารกายอุปกรณ์ / ยกระบบผู้ช่วยคนพิการ (PA)</td>
+                            </tr>
+                            <tr class="border-bjt">
+                                <th scope="row" class="font-bold">ภูมิใจไทย</th>
+                                <td class="font-semibold text-blue-800">อนุสรี ทับสุวรรณ</td>
+                                <td><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>ทีมงานหลัก:</strong> ทีมที่ปรึกษาจากกรรมาธิการสวัสดิการสังคม และผู้เชี่ยวชาญด้านกฎหมายแรงงาน
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานที่มีความสัมพันธ์อันดีกับองค์กรภาครัฐและพม. มีประสบการณ์ขับเคลื่อนกฎหมายจ้างงาน</p>
+                                </td>
+                                <td class="text-slate-500">เน้นแก้ไขกฎหมายเข้าถึงสิทธิ</td>
+                                <td>จ้างงานรัฐ 1 หมื่นอัตรา / เงินกู้รายกลุ่ม 2 ล้าน</td>
+                            </tr>
+                            <tr class="border-pt">
+                                <th scope="row" class="font-bold">เพื่อไทย</th>
+                                <td class="font-semibold text-red-600">ธิติวัฐ อดิศรพันธ์กุล</td>
+                                <td><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>ทีมงานหลัก:</strong> ทีมเศรษฐกิจดิจิทัล และคณะทำงานด้านการพัฒนาที่ยั่งยืน (SDGs)
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานรุ่นใหม่ที่เชี่ยวชาญด้าน Technology Integration และการบริหารจัดการงบประมาณภาครัฐ</p>
+                                </td>
+                                <td class="font-bold">เติมรายได้ให้ถึง 3,000 บาท (MIG)</td>
+                                <td>30 บาท AI / เทคโนโลยี "ไม่มีโต๊ะ" ตัดคอรัปชัน</td>
+                            </tr>
+                            <tr class="border-dem">
+                                <th scope="row" class="font-bold">ประชาธิปัตย์</th>
+                                <td class="font-semibold text-sky-600">ปทิตตา ไชยปาน</td>
+                                <td><span class="badge badge-pwd">คนพิการ (สายตา)</span></td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>ทีมงานหลัก:</strong> มีคนพิการทางสายตาเป็นหัวหอกหลัก และทีมกฎหมายสิทธิมนุษยชน
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">ดึงผู้เชี่ยวชาญด้านกฎหมายคนพิการและนิติศาสตร์มาร่วมทีม เพื่อเน้นการปฏิรูปโครงสร้างทางกฎหมาย</p>
+                                </td>
+                                <td class="font-bold">1,600 บาท (เบี้ยคูณสอง)</td>
+                                <td>Accessibility for All / ปฏิรูปกฎหมาย พ.ร.บ.คนพิการ</td>
+                            </tr>
+                            <tr class="border-tst">
+                                <th scope="row" class="font-bold">ไทยสร้างไทย</th>
+                                <td class="font-semibold text-purple-600">ปริเยศ อังกูรกิตติ</td>
+                                <td><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>ทีมงานหลัก:</strong> ทีมงานอาสาสมัครภาคประชาชน และคณะทำงานรัฐสวัสดิการ
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">เน้นคนทำงานพื้นที่ที่เข้าใจปัญหาความยากจนซ้ำซ้อนในกลุ่มคนพิการและผู้สูงอายุ</p>
+                                </td>
+                                <td class="font-bold">3,000 บาท (ถ้วนหน้า)</td>
+                                <td>จ้างงาน 6 หมื่นคนใน 3 ปี / งบปรับปรุงบ้านเรือน</td>
+                            </tr>
+                            <tr class="border-utn">
+                                <th scope="row" class="font-bold">รวมไทยสร้างชาติ</th>
+                                <td class="font-semibold text-indigo-900">ร.ต.อ.หญิง อัยรดา บำรุงรักษ์</td>
+                                <td><span class="badge badge-rep">ตัวแทนพรรค</span></td>
+                                <td>
+                                    <div class="highlight-team">
+                                        <strong>ทีมงานหลัก:</strong> คณะทำงานเทคโนโลยีเพื่อสวัสดิการ และทีมโฆษกพรรค
+                                    </div>
+                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานด้านบริหารจัดการข้อมูลกลาง (Big Data) เพื่อการกระจายงบประมาณช่วยเหลือให้ถึงมือ</p>
+                                </td>
+                                <td class="font-bold">1,500 - 2,000 บาท</td>
+                                <td>Super App "เป๋าตัง" / ลดค่าพลังงานช่วยผู้เปราะบาง</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHART -->
+        <section class="space-y-6">
+            <div class="border-l-4 border-slate-600 pl-4">
+                <h2 class="text-2xl font-bold text-slate-800">เพดานเบี้ยความพิการที่เสนอ (บาท/เดือน)</h2>
+            </div>
+            
+            <div class="card p-8">
+                <div class="chart-container">
+                    <canvas id="allowanceChart"></canvas>
+                </div>
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-[11px] md:text-xs">
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#F97316] mr-2 rounded"></span>พรรคประชาชน</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#2D3E94] mr-2 rounded"></span>พรรคภูมิใจไทย</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#DC2626] mr-2 rounded"></span>พรรคเพื่อไทย</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#00ADEF] mr-2 rounded"></span>พรรคประชาธิปัตย์</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#7C3AED] mr-2 rounded"></span>ไทยสร้างไทย</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-[#1E1B4B] mr-2 rounded"></span>รวมไทยสร้างชาติ</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-400 text-sm pb-10">
+            <p>© สรุปข้อมูลนโยบายและทีมงานคนพิการสำหรับการเลือกตั้ง | ข้อมูลวิเคราะห์จากนโยบายพรรค</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const ctxBar = document.getElementById('allowanceChart').getContext('2d');
+        new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: ['ประชาชน', 'ภูมิใจไทย', 'เพื่อไทย', 'ประชาธิปัตย์', 'ไทยสร้างไทย', 'รวมไทยสร้างชาติ'],
+                datasets: [{
+                    data: [2000, 800, 3000, 1600, 3000, 2000],
+                    backgroundColor: ['#F97316', '#2D3E94', '#DC2626', '#00ADEF', '#7C3AED', '#1E1B4B'],
+                    borderRadius: 6,
+                    maxBarThickness: 50
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 3500, title: { display: true, text: 'บาท' } },
+                    x: { ticks: { font: { family: 'Sarabun' } } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
