@@ -113,6 +113,92 @@
         }
         /* Make skip/quick jump targets land nicely below header */
         [tabindex="-1"]:focus { outline: none; }
+        
+        /* ===== Accessible table for 22 model polling stations ===== */
+
+        .unit-table-wrap {
+        max-width: 72rem;          /* ~max-w-6xl */
+        margin: 0 auto;
+        }
+
+        .unit-table-wrap .table-scroll {
+        overflow-x: auto;
+        border: 1px solid #E2E8F0;
+        border-radius: 0.75rem;
+        background: #fff;
+        }
+
+        /* Make focus obvious for keyboard/screen reader users */
+        .unit-table-wrap a:focus-visible,
+        .unit-table-wrap summary:focus-visible,
+        .unit-table-wrap button:focus-visible {
+        outline: 3px solid #0EA5E9;
+        outline-offset: 3px;
+        border-radius: 0.375rem;
+        }
+
+        /* Table base */
+        .unit-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 56rem;          /* กันคอลัมน์แคบเกินไปบนจอเล็ก */
+        }
+
+        /* Caption for screen readers (keep it accessible but visually hidden) */
+        .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+        }
+
+        /* Header row: visible + strong contrast */
+        .unit-table thead th {
+        background: #F1F5F9;
+        color: #0F172A;
+        font-weight: 700;
+        text-align: left;
+        padding: 0.875rem 0.75rem;
+        border-bottom: 2px solid #CBD5E1;
+        vertical-align: bottom;
+        }
+
+        /* Sticky header (great for long tables) */
+        .unit-table thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        }
+
+        /* Body cells */
+        .unit-table tbody th,
+        .unit-table tbody td {
+        padding: 0.75rem;
+        border-bottom: 1px solid #E2E8F0;
+        vertical-align: top;
+        color: #0F172A;
+        background: #fff;
+        }
+
+        /* Zebra rows for readability */
+        .unit-table tbody tr:nth-child(even) td,
+        .unit-table tbody tr:nth-child(even) th {
+        background: #F8FAFC;
+        }
+
+        /* Improve readability on narrow screens */
+        @media (max-width: 768px) {
+        .unit-table {
+            min-width: 44rem;
+        }
+        }
+
+
 
 </style>
 </head>
@@ -542,132 +628,165 @@
 </section>
 
 <!-- Section: 22 Model Polling Stations -->
-<section aria-labelledby="unit-heading" class="mb-16" id="unit-section" tabindex="-1">
-<h2 class="text-2xl font-bold text-slate-800 mb-6" id="unit-heading"><span aria-hidden="true">📍</span> ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ</h2>
-<div class="overflow-x-auto">
-<table class="w-full max-w-5xl mx-auto text-left border border-slate-200 rounded-xl overflow-hidden"><caption class="sr-only">ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ</caption>
-<thead class="bg-slate-50">
-<tr>
-<th class="p-3 border-b font-semibold" scope="col">จังหวัด</th>
-<th class="p-3 border-b font-semibold" scope="col">สถานที่ตั้งหน่วยเลือกตั้ง</th>
-<th class="p-3 border-b font-semibold" scope="col"></th>ความช่วยเหลือพิเศษ (<span lang="en">Accessibility Features</span>)
-</tr>
-</thead>
-<tbody>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตภาษีเจริญ)</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านบางแค</td>
-<td class="p-3 border-b align-top">ทางลาดเข้าสู่คูหา, อาสาสมัครช่วยพยุง, ราวจับพยุงตัว, บริการวีลแชร์สำรอง</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตพญาไท)</th>
-<td class="p-3 border-b align-top">โรงพยาบาลทหารผ่านศึก</td>
-<td class="p-3 border-b align-top">ลิฟต์สำหรับคนพิการ, เตียงเคลื่อนย้ายผู้ป่วย, ทีมพยาบาลดูแลพิเศษ</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตราชเทวี)</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาและฝึกอบรมคนพิการแห่งเอเชียแปซิฟิก (APCD)</td>
-<td class="p-3 border-b align-top"></td><span lang="en">Universal Design</span> ครบวงจร, ล่ามภาษามือประจำจุด, แผ่นทาบบัตรอักษรเบรลล์
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตดินแดง)</th>
-<td class="p-3 border-b align-top">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ (พม.)</td>
-<td class="p-3 border-b align-top">พื้นที่ราบเรียบ, ระบบเสียงประกาศขั้นตอน, ช่องทางเดินกว้างพิเศษสำหรับวีลแชร์</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
-<td class="p-3 border-b align-top">สถานสงเคราะห์เด็กพิการและทางสมอง (บ้านนนทภูมิ)</td>
-<td class="p-3 border-b align-top">คูหาเลือกตั้งปรับระดับความสูงได้, อาสาสมัครที่มีทักษะสื่อสารกับคนพิการทางสติปัญญา</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
-<td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการและทุพพลภาพ (บ้านพระประแดง)</td>
-<td class="p-3 border-b align-top">รถรับส่งภายในศูนย์ไปยังคูหา, ห้องน้ำคนพิการมาตรฐานสูง</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
-<td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านเฟื่องฟ้า</td>
-<td class="p-3 border-b align-top">คูหาเลือกตั้งแบบส่วนตัวสำหรับคนพิการทางจิตเวชหรือออทิสติก, ทางลาดมีขอบกันตก</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
-<td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านราชาวดี (ชาย)</td>
-<td class="p-3 border-b align-top"></td>ป้ายสัญลักษณ์รูปภาพ (<span lang="en">Pictogram</span>) ขนาดใหญ่, อาสาสมัครนำทาง 1 ต่อ 1
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครปฐม</th>
-<td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการ (วัดไร่ขิง)</td>
-<td class="p-3 border-b align-top">แผ่นทาบบัตรเลือกตั้งอักษรเบรลล์, ผิวสัมผัสต่างระดับนำทางไปยังคูหา</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
-<td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดพระมหาไถ่ พัทยา</td>
-<td class="p-3 border-b align-top">ระบบเสียงนำทางผ่านแอปพลิเคชัน, แผ่นทาบบัตรเบรลล์ทุกหมายเลข, อาสาสมัครอ่านรายชื่อผู้สมัคร</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
-<td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการการุณยเวศม์</td>
-<td class="p-3 border-b align-top">พื้นที่จอดรถคนพิการใกล้คูหา, ทางลาดองศาต่ำพิเศษสำหรับวีลแชร์มือหมุน</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์</td>
-<td class="p-3 border-b align-top"></td>ช่องทางด่วน (<span lang="en">Fast Track</span>) สำหรับผู้สูงอายุ, เก้าอี้พักคอยพร้อมน้ำดื่มตามจุดต่างๆ
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
-<td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดภาคเหนือ</td>
-<td class="p-3 border-b align-top">คู่มือผู้สมัครแบบอักษรเบรลล์และอักษรตัวขยายใหญ่, อาสาสมัครนำทางเข้าคูหา</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">พิษณุโลก</th>
-<td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการพิษณุโลก</td>
-<td class="p-3 border-b align-top"></td>ระบบล่ามภาษามือออนไลน์ (<span lang="en">VRI</span>), คูหาเลือกตั้งที่ผู้พิการทางการเคลื่อนไหวเข้าถึงได้ง่าย
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น</td>
-<td class="p-3 border-b align-top">พื้นทางเดินกันลื่น, ราวจับสแตนเลส, บริการช่วยเหลือกรณีฉุกเฉินทางการแพทย์</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
-<td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดขอนแก่น</td>
-<td class="p-3 border-b align-top">บัตรทาบอักษรเบรลล์ 3 ภาษา, ผังจำลองหน่วยเลือกตั้งแบบสัมผัส</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครราชสีมา</th>
-<td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านแคราย</td>
-<td class="p-3 border-b align-top">คูหาเลือกตั้งขนาดกว้างพิเศษ, บริการวีลแชร์ไฟฟ้าสำหรับใช้ในหน่วย</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">อุบลราชธานี</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดอุบลราชธานี</td>
-<td class="p-3 border-b align-top">แว่นขยายสำหรับผู้อ่านตัวหนังสือเล็กไม่ชัด, แสงสว่างภายในคูหาเพียงพอเป็นพิเศษ</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
-<td class="p-3 border-b align-top">สถานสงเคราะห์เด็กปัญญาอ่อนภาคใต้</td>
-<td class="p-3 border-b align-top"></td>สื่อแนะนำการเลือกตั้งแบบเข้าใจง่าย (<span lang="en">Easy Read</span>), อาสาสมัครช่วยอำนวยความสะดวกเฉพาะจุด
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดสงขลา</td>
-<td class="p-3 border-b align-top">ทางเดินราบเรียบไร้สิ่งกีดขวาง, ระบบคิวพิเศษไม่ต้องยืนรอนาน</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สุราษฎร์ธานี</th>
-<td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการสุราษฎร์ธานี</td>
-<td class="p-3 border-b align-top">วิดีโอแนะนำภาษามือ, เจ้าหน้าที่แนะนำขั้นตอนด้วยภาษามือเบื้องต้น</td>
-</tr>
-<tr>
-<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ยะลา</th>
-<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดยะลา</td>
-<td class="p-3 border-b align-top">ระบบรักษาความปลอดภัยและการเข้าถึงที่สะดวก, อาสาสมัครช่วยเหลือตลอดเส้นทาง</td>
-</tr>
-</tbody>
-</table>
-</div>
+ <section id="unit-section" tabindex="-1" aria-labelledby="unit-heading" class="mb-16">
+  <h2 id="unit-heading" class="text-2xl font-bold text-slate-800 mb-6">
+    <span aria-hidden="true">📍</span>
+    ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ
+  </h2>
+
+  <!-- Short instructions for screen reader users -->
+  <p id="unit-table-desc" class="sr-only">
+    ตารางนี้มี 3 คอลัมน์ ได้แก่ จังหวัด, สถานที่ตั้งหน่วยเลือกตั้ง, และความช่วยเหลือพิเศษ
+    ตารางสามารถเลื่อนในแนวนอนได้ หากหน้าจอแคบ
+  </p>
+
+  <!-- Optional: visible helper for everyone -->
+  <p class="text-sm text-slate-600 mb-4">
+    หมายเหตุ: หากใช้มือถือ สามารถเลื่อนตารางในแนวนอนได้
+  </p>
+
+  <!-- Skip link: lets screen reader/keyboard users jump past the table -->
+  <a href="#after-unit-table" class="text-sm text-blue-700 hover:underline underline-offset-4">
+    ข้ามตารางนี้
+  </a>
+
+  <div class="unit-table-wrap mt-3">
+    <div class="table-scroll" aria-label="ตารางหน่วยเลือกตั้งต้นแบบ เลื่อนได้ในแนวนอน">
+      <table class="unit-table" aria-describedby="unit-table-desc">
+        <caption class="sr-only">
+          ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">จังหวัด</th>
+            <th scope="col">สถานที่ตั้งหน่วยเลือกตั้ง</th>
+            <th scope="col">ความช่วยเหลือพิเศษ (Accessibility Features)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตภาษีเจริญ)</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านบางแค</td>
+            <td class="p-3 border-b align-top">ทางลาดเข้าสู่คูหา, อาสาสมัครช่วยพยุง, ราวจับพยุงตัว, บริการวีลแชร์สำรอง</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตพญาไท)</th>
+            <td class="p-3 border-b align-top">โรงพยาบาลทหารผ่านศึก</td>
+            <td class="p-3 border-b align-top">ลิฟต์สำหรับคนพิการ, เตียงเคลื่อนย้ายผู้ป่วย, ทีมพยาบาลดูแลพิเศษ</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตราชเทวี)</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาและฝึกอบรมคนพิการแห่งเอเชียแปซิฟิก (APCD)</td>
+            <td class="p-3 border-b align-top"></td><span lang="en">Universal Design</span> ครบวงจร, ล่ามภาษามือประจำจุด, แผ่นทาบบัตรอักษรเบรลล์
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตดินแดง)</th>
+            <td class="p-3 border-b align-top">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ (พม.)</td>
+            <td class="p-3 border-b align-top">พื้นที่ราบเรียบ, ระบบเสียงประกาศขั้นตอน, ช่องทางเดินกว้างพิเศษสำหรับวีลแชร์</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
+            <td class="p-3 border-b align-top">สถานสงเคราะห์เด็กพิการและทางสมอง (บ้านนนทภูมิ)</td>
+            <td class="p-3 border-b align-top">คูหาเลือกตั้งปรับระดับความสูงได้, อาสาสมัครที่มีทักษะสื่อสารกับคนพิการทางสติปัญญา</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
+            <td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการและทุพพลภาพ (บ้านพระประแดง)</td>
+            <td class="p-3 border-b align-top">รถรับส่งภายในศูนย์ไปยังคูหา, ห้องน้ำคนพิการมาตรฐานสูง</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
+            <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านเฟื่องฟ้า</td>
+            <td class="p-3 border-b align-top">คูหาเลือกตั้งแบบส่วนตัวสำหรับคนพิการทางจิตเวชหรือออทิสติก, ทางลาดมีขอบกันตก</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
+            <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านราชาวดี (ชาย)</td>
+            <td class="p-3 border-b align-top"></td>ป้ายสัญลักษณ์รูปภาพ (<span lang="en">Pictogram</span>) ขนาดใหญ่, อาสาสมัครนำทาง 1 ต่อ 1
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครปฐม</th>
+            <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการ (วัดไร่ขิง)</td>
+            <td class="p-3 border-b align-top">แผ่นทาบบัตรเลือกตั้งอักษรเบรลล์, ผิวสัมผัสต่างระดับนำทางไปยังคูหา</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
+            <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดพระมหาไถ่ พัทยา</td>
+            <td class="p-3 border-b align-top">ระบบเสียงนำทางผ่านแอปพลิเคชัน, แผ่นทาบบัตรเบรลล์ทุกหมายเลข, อาสาสมัครอ่านรายชื่อผู้สมัคร</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
+            <td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการการุณยเวศม์</td>
+            <td class="p-3 border-b align-top">พื้นที่จอดรถคนพิการใกล้คูหา, ทางลาดองศาต่ำพิเศษสำหรับวีลแชร์มือหมุน</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์</td>
+            <td class="p-3 border-b align-top"></td>ช่องทางด่วน (<span lang="en">Fast Track</span>) สำหรับผู้สูงอายุ, เก้าอี้พักคอยพร้อมน้ำดื่มตามจุดต่างๆ
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
+            <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดภาคเหนือ</td>
+            <td class="p-3 border-b align-top">คู่มือผู้สมัครแบบอักษรเบรลล์และอักษรตัวขยายใหญ่, อาสาสมัครนำทางเข้าคูหา</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">พิษณุโลก</th>
+            <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการพิษณุโลก</td>
+            <td class="p-3 border-b align-top"></td>ระบบล่ามภาษามือออนไลน์ (<span lang="en">VRI</span>), คูหาเลือกตั้งที่ผู้พิการทางการเคลื่อนไหวเข้าถึงได้ง่าย
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น</td>
+            <td class="p-3 border-b align-top">พื้นทางเดินกันลื่น, ราวจับสแตนเลส, บริการช่วยเหลือกรณีฉุกเฉินทางการแพทย์</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
+            <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดขอนแก่น</td>
+            <td class="p-3 border-b align-top">บัตรทาบอักษรเบรลล์ 3 ภาษา, ผังจำลองหน่วยเลือกตั้งแบบสัมผัส</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครราชสีมา</th>
+            <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านแคราย</td>
+            <td class="p-3 border-b align-top">คูหาเลือกตั้งขนาดกว้างพิเศษ, บริการวีลแชร์ไฟฟ้าสำหรับใช้ในหน่วย</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">อุบลราชธานี</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดอุบลราชธานี</td>
+            <td class="p-3 border-b align-top">แว่นขยายสำหรับผู้อ่านตัวหนังสือเล็กไม่ชัด, แสงสว่างภายในคูหาเพียงพอเป็นพิเศษ</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
+            <td class="p-3 border-b align-top">สถานสงเคราะห์เด็กปัญญาอ่อนภาคใต้</td>
+            <td class="p-3 border-b align-top"></td>สื่อแนะนำการเลือกตั้งแบบเข้าใจง่าย (<span lang="en">Easy Read</span>), อาสาสมัครช่วยอำนวยความสะดวกเฉพาะจุด
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดสงขลา</td>
+            <td class="p-3 border-b align-top">ทางเดินราบเรียบไร้สิ่งกีดขวาง, ระบบคิวพิเศษไม่ต้องยืนรอนาน</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สุราษฎร์ธานี</th>
+            <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการสุราษฎร์ธานี</td>
+            <td class="p-3 border-b align-top">วิดีโอแนะนำภาษามือ, เจ้าหน้าที่แนะนำขั้นตอนด้วยภาษามือเบื้องต้น</td>
+            </tr>
+            <tr>
+            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ยะลา</th>
+            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดยะลา</td>
+            <td class="p-3 border-b align-top">ระบบรักษาความปลอดภัยและการเข้าถึงที่สะดวก, อาสาสมัครช่วยเหลือตลอดเส้นทาง</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- End anchor for skip link -->
+  <div id="after-unit-table" tabindex="-1"></div>
 </section>
+
+
+
 <footer class="text-center text-slate-500 py-12 border-t border-slate-100">
 <div class="max-w-screen-xl mx-auto px-4 space-y-4">
 <div class="font-medium text-slate-600">
