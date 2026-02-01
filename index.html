@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลนโยบายและทีมงานเพื่อคนพิการ เลือกตั้ง 8 กุมภาพันธ์ 2569</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ข้อมูลนโยบายและทีมงานเพื่อคนพิการ เลือกตั้ง 8 กุมภาพันธ์ 2569</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             font-family: 'Sarabun', sans-serif;
             background-color: #F8FAFC;
@@ -102,601 +103,615 @@
         .custom-scrollbar::-webkit-scrollbar { height: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-    </style>
+    
+
+        /* Accessibility: visible focus for keyboard users */
+        a:focus-visible, button:focus-visible, summary:focus-visible {
+            outline: 3px solid #0EA5E9;
+            outline-offset: 3px;
+            border-radius: 0.375rem;
+        }
+        /* Make skip/quick jump targets land nicely below header */
+        [tabindex="-1"]:focus { outline: none; }
+
+</style>
 </head>
 <body class="overflow-x-hidden">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded">
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded" href="#main-content">
         ข้ามไปยังเนื้อหาหลัก
     </a>
-    <header class="bg-deep text-white py-8 md:py-12 px-4 shadow-lg" role="banner">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-2xl md:text-4xl font-extrabold mb-3 leading-tight">ข้อมูลนโยบายและทีมงานเพื่อคนพิการ</h1>
-            <p class="text-slate-400 text-sm md:text-lg max-w-2xl mx-auto">เจาะลึกวิสัยทัศน์พรรคการเมืองและการมีส่วนร่วมของคนพิการในการเลือกตั้ง 8 กุมภาพันธ์</p>
-        </div>
-    </header>
+<header class="bg-deep text-white py-8 md:py-12 px-4 shadow-lg" role="banner">
+<div class="max-w-6xl mx-auto text-center">
+<h1 class="text-2xl md:text-4xl font-extrabold mb-3 leading-tight">ข้อมูลนโยบายและทีมงานเพื่อคนพิการ</h1>
+<p class="text-slate-400 text-sm md:text-lg max-w-2xl mx-auto">เจาะลึกวิสัยทัศน์พรรคการเมืองและการมีส่วนร่วมของคนพิการในการเลือกตั้ง 8 กุมภาพันธ์</p>
+</div>
+</header>
+<main class="max-w-[99%] mx-auto p-2 md:p-8 space-y-10" id="main-content" role="main">
+<nav aria-label="ลิงก์ลัดไปยังหัวข้อสำคัญ" class="card p-4 md:p-6" id="quick-links">
+<h2 class="text-lg md:text-xl font-bold text-slate-800">ลิงก์ลัด (สำหรับข้ามไปยังหัวข้อสำคัญ)</h2>
+<p class="text-sm text-slate-600 mt-2">กด Enter ที่ลิงก์เพื่อข้ามไปยังหัวข้อที่ต้องการ</p>
+<ul class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#policy-section">ตารางเปรียบเทียบนโยบาย</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#chart-section">กราฟเพดานเบี้ยความพิการ</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#guide-section">คู่มือเลือกตั้งและประชามติ</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#unit-section">หน่วยเลือกตั้งต้นแบบ 22 แห่ง</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#contact-section">ติดต่อแจ้งแก้ไขข้อมูล</a></li>
+</ul>
+</nav>
+<!-- DATA TABLE -->
+<section class="space-y-6" id="policy-section" tabindex="-1">
+<div class="border-l-4 border-slate-600 pl-4">
+<h2 class="text-2xl font-bold text-slate-800">เปรียบเทียบทีมงานและนโยบาย</h2>
+</div>
+<div class="card p-4 md:p-6" id="party-quick-links">
+<h3 class="text-base md:text-lg font-bold text-slate-800">ข้ามไปยังพรรคตามหมายเลข (ลิงก์ลัดในตาราง)</h3>
+<ul class="mt-3 grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-6" aria-label="ข้ามไปยังแถวพรรคหมายเลข 6 ในตารางนโยบาย">6 — รวมไทยสร้างชาติ</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-9" aria-label="ข้ามไปยังแถวพรรคหมายเลข 9 ในตารางนโยบาย">9 — เพื่อไทย</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-11" aria-label="ข้ามไปยังแถวพรรคหมายเลข 11 ในตารางนโยบาย">11 — เศรษฐกิจ</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-27" aria-label="ข้ามไปยังแถวพรรคหมายเลข 27 ในตารางนโยบาย">27 — ประชาธิปัตย์</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-37" aria-label="ข้ามไปยังแถวพรรคหมายเลข 37 ในตารางนโยบาย">37 — ภูมิใจไทย</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-42" aria-label="ข้ามไปยังแถวพรรคหมายเลข 42 ในตารางนโยบาย">42 — กล้าธรรม</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-44" aria-label="ข้ามไปยังแถวพรรคหมายเลข 44 ในตารางนโยบาย">44 — โอกาสใหม่</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-46" aria-label="ข้ามไปยังแถวพรรคหมายเลข 46 ในตารางนโยบาย">46 — พรรคประชาชน</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-48" aria-label="ข้ามไปยังแถวพรรคหมายเลข 48 ในตารางนโยบาย">48 — ไทยสร้างไทย</a></li>
+<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-49" aria-label="ข้ามไปยังแถวพรรคหมายเลข 49 ในตารางนโยบาย">49 — ไทยก้าวใหม่</a></li>
+</ul>
+</div>
+<div class="card overflow-hidden">
+<div class="overflow-x-auto" aria-label="ตารางนโยบาย เลื่อนได้ในแนวนอน">
+<table aria-describedby="policy-table-desc" class="w-full min-w-[1400px] policy-table">
+<caption class="sr-only">ตารางเปรียบเทียบทีมงานและนโยบายด้านคนพิการของพรรคการเมือง</caption>
+<thead>
+<tr>
+<th class="w-32" scope="col">พรรค</th>
+<th class="w-25" scope="col">หมายเลขพรรค</th>
+<th class="w-44" scope="col">หัวหอกนโยบาย</th>
+<th class="w-36" scope="col">สถานะ</th>
+<th class="w-64" scope="col">ความโดดเด่นของทีม / ประสบการณ์</th>
+<th class="w-48" scope="col">นโยบายการเงิน</th>
+<th class="p-3 border-b font-semibold" scope="col">นโยบาย</th>
+</tr>
+</thead>
+<tbody class="text-slate-700">
+<tr class="border-utn" id="party-6">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-6">รวมไทยสร้างชาติ</a></th>
+<td class="font-semibold text-indigo-900 text-center">6</td>
+<td class="font-semibold text-indigo-900">ร.ต.อ.หญิง อัยรดา บำรุงรักษ์</td>
+<td class="p-3 border-b align-top"><span class="badge badge-rep">ตัวแทนพรรค</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> คณะทำงานเทคโนโลยีเพื่อสวัสดิการ และทีมโฆษกพรรค
+                                    </div>
+<p class="mt-2 text-xs text-slate-500"></p>เน้นทีมงานด้านบริหารจัดการข้อมูลกลาง (<span lang="en">Big Data</span>) เพื่อการกระจายงบประมาณช่วยเหลือให้ถึงมือ
+</td>
+<td class="font-bold">1,500 - 2,000 บาท</td>
+<td class="p-3 border-b align-top">
 
-    <main id="main-content" class="max-w-[99%] mx-auto p-2 md:p-8 space-y-10" role="main">
 
-        <!-- DATA TABLE -->
-        <section class="space-y-6">
-            <div class="border-l-4 border-slate-600 pl-4">
-                <h2 class="text-2xl font-bold text-slate-800">เปรียบเทียบทีมงานและนโยบาย</h2>
-            </div>
 
-            <div class="card overflow-hidden">
-                <div class="overflow-x-auto">
-                    <table class="w-full min-w-[1400px] policy-table">
-                        <caption class="sr-only">ตารางเปรียบเทียบทีมงานและนโยบายด้านคนพิการของพรรคการเมือง</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col" class="w-32">พรรค</th>
-                                <th scope="col" class="w-25">หมายเลขพรรค</th>
-                                <th scope="col" class="w-44">หัวหอกนโยบาย</th>
-                                <th scope="col" class="w-36">สถานะ</th>
-                                <th scope="col" class="w-64">ความโดดเด่นของทีม / ประสบการณ์</th>
-                                <th scope="col" class="w-48">นโยบายการเงิน</th>
-                                <th scope="col" class="p-3 border-b font-semibold">นโยบาย</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-slate-700">
-                            <tr class="border-pp">
-                                <th scope="row" class="font-bold">พรรคประชาชน</th>
-                                <td class="font-semibold text-orange-600 text-center">46</td>
-                                <td class="font-semibold text-orange-600">อรรถพล ศรีชิษณุวรานนท์</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-pwd">คนพิการ (ร่างกาย)</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> มีคนพิการร่วมเป็นคณะทำงานฝ่ายนโยบาย และเครือข่ายคนพิการระดับพื้นที่ (IL)
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">ทำงานใกล้ชิดกับเครือข่ายภาคประชาชนและกลุ่มนักเคลื่อนไหวสิทธิคนพิการมานานกว่า 10 ปี</p>
-                                </td>
-                                <td class="font-bold">1,200 (ถ้วนหน้า) / 2,000 (รุนแรง)</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>โครงสร้างสวัสดิการ:</strong>จัดตั้ง "ธนาคารอุปกรณ์" เพื่อสนับสนุนรถเข็นวีลแชร์ เครื่องช่วยฟัง และอุปกรณ์จำเป็นอย่างทั่วถึง</div>
-                                    <div><strong>การดูแล:</strong>ปฏิรูประบบผู้ช่วยคนพิการ (Personal Assistant: PA) และกำหนดสัดส่วนผู้ช่วย 1 ต่อ 1 สำหรับผู้ที่จำเป็น จัดนักบริบาลอาชีพที่หน่วยบริการปฐมภูมิ</div>
-                                    <div><strong>การศึกษา:</strong>ปฏิรูปศูนย์การศึกษาเด็กพิเศษและสร้างแพลตฟอร์มการเรียนรู้ทักษะแรงงาน เพิ่มโอกาสคนพิการเข้าสู่การทำงาน</div>
-                                    <div><strong>การยืนยันตัวตน:</strong>ปรับปรุงกระบวนการออกและต่ออายุบัตรคนพิการ เพื่อลดภาระคนพิการโดยเฉพาะผู้พิการติดเตียง</div>
-                                    <div><strong>บริการสาธารณะ:</strong>สร้างระบบขนส่งสาธารณะเพื่อทุกคน เพิ่มอำนาจและงบประมาณท้องถิ่นในการจัดบริการสาธารณะเพื่อคนพิการ</div>
-                                    <div><strong>สังคม:</strong>บูรณาการระบบการดูแลรายบุคคลในระดับตำบล ลดกลุ่มคนพิการตกหล่นในชุมชน</div>
-                                    <div><strong>การแพทย์:</strong>ลดภาวะพิการ ด้วยระบบดูแลผู้ป่วยระยะกลาง และผลิตนักกายภาพบำบัดบริการฟื้นฟูที่ รพช./รพ.สต.</div>
-                                    <div><strong>การเงิน:</strong>กองทุนดูแลผู้ป่วยระยะยาวและผู้มีภาวะพึ่งพิงใหม่</div>
-                                    <div><strong>กฎหมาย:</strong>ตรากฎหมายว่าด้วยการขจัดการเลือกปฎิบัติ</div>
-                                </td>
-                            </tr>
-                            <tr class="border-bjt">
-                                <th scope="row" class="font-bold">ภูมิใจไทย</th>
-                                <td class="font-semibold text-blue-800 text-center">37</td>
-                                <td class="font-semibold text-blue-800">อนุสรี ทับสุวรรณ</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> ทีมที่ปรึกษาจากกรรมาธิการสวัสดิการสังคม และผู้เชี่ยวชาญด้านกฎหมายแรงงาน
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานที่มีความสัมพันธ์อันดีกับองค์กรภาครัฐและพม. มีประสบการณ์ขับเคลื่อนกฎหมายจ้างงานคนพิการ</p>
-                                </td>
-                                <td class="text-slate-500">ไม่มีข้อมูล</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>ไม่มีข้อมูลนโยบายเรื่องคนพิการโดยตรงมีเพียงหัวข้อที่อยู่ภายใต้นโยบายอื่น และนโยบายทำต่อเนื่องจากสิ่งที่เคยดำเนินการเดิมในการเลือกตั้งครั้งก่อนเท่านั้น</strong></div>
-                                </td>
-                            </tr>
-                            <tr class="border-pt">
-                                <th scope="row" class="font-bold">เพื่อไทย</th>
-                                <td class="font-semibold text-red-600 text-center">9</td>
-                                <td class="font-semibold text-red-600">ธิติวัฐ อดิศรพันธ์กุล</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> ทีมเศรษฐกิจดิจิทัล และคณะทำงานด้านการพัฒนาที่ยั่งยืน (SDGs)
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานรุ่นใหม่ที่เชี่ยวชาญด้าน Technology Integration และการบริหารจัดการงบประมาณภาครัฐ</p>
-                                </td>
-                                <td class="font-bold">เติมรายได้ให้ถึง 3,000 บาท (MIG)</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>เทคโนโลยี:</strong>ระบบข้อมูลภาษามือ/เสียงในทุกแพลตฟอร์มรัฐ</div>
-                                    <div><strong>ทักษะและงาน:</strong>พัฒนาศูนย์การศึกษาพิเศษและเพิ่มครูเฉพาะทาง การสร้างรายได้ด้วย Job Matching Platform </div>
-                                    <div><strong>สิทธิมนุษยชน:</strong>ตั้งกลไกตรวจสอบการละเมิดสิทธิมนุษยชนที่เป็นอิสระสำหรับกลุ่มเปราะบาง</div>
-                                    <div><strong>อาคารสถานที่:</strong>ปรับปรุงตัวอาคารสถานที่และบริการต่างๆ ของหน่วยงานรัฐ ให้ทุกคนเข้าถึงกันอย่างเท่าเทียม</div>
-                                    <div><strong>กฎหมาย:</strong>ผลักดันกฎหมายส่งเสริม universal design และมาตรการต่างๆเพื่อสนับสนุนอย่างเป็นรูปธรรม</div>
-                                </td>
-                            </tr>
-                            <tr class="border-dem">
-                                <th scope="row" class="font-bold">ประชาธิปัตย์</th>
-                                <td class="font-semibold text-sky-600 text-center">27</td>
-                                <td class="font-semibold text-sky-600">ปทิตตา ไชยปาน</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-pwd">คนพิการ (สายตา)</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> มีคนพิการทางสายตาเป็นหัวหอกหลัก และทีมกฎหมายสิทธิมนุษยชน
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">ดึงผู้เชี่ยวชาญด้านกฎหมายคนพิการและนิติศาสตร์มาร่วมทีม เพื่อเน้นการปฏิรูปโครงสร้างทางกฎหมาย</p>
-                                </td>
-                                <td class="font-bold">1,600 บาท (เบี้ยคูณสอง)</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>ฟื้นฟู:</strong>จัดให้มีบริการฟื้นฟูความพิการ และอุปกรณ์ช่วยการเคลื่อนไหวอย่างทั่วถึง</div>
-                                    <div><strong>การศึกษา:</strong>ผลักดันการศึกษาฟรีตั้งแต่แรกพบความพิการ</div>
-                                    <div><strong>อาคารสถานที่:</strong>50,000 บาท เพื่อบ้านปลอดภัยผู้สูงวัย และผู้พิการ ยกระดับความปลอดภัยในบ้านตั้งแต่ต้นทาง</div>
-                                    <div><strong>การจ้างงาน:</strong>จ้างงานคนพิการ 1% บูรณาการฐานข้อมูลคนพิการ เชื่อม “คนพิการ–งาน–นายจ้าง” ให้จ้างได้จริง ทำงานได้จริง และอยู่ได้ยั่งยืน และโครการฝึกอาชีพ สร้างรายได้</div>
-                                </td>
-                            </tr>
-                            <tr class="border-tst">
-                                <th scope="row" class="font-bold">ไทยสร้างไทย</th>
-                                <td class="font-semibold text-purple-600 text-center">48</td>
-                                <td class="font-semibold text-purple-600">ปริเยศ อังกูรกิตติ</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> ทีมงานอาสาสมัครภาคประชาชน และคณะทำงานรัฐสวัสดิการ
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นคนทำงานพื้นที่ที่เข้าใจปัญหาความยากจนซ้ำซ้อนในกลุ่มคนพิการและผู้สูงอายุ</p>
-                                </td>
-                                <td class="font-bold">3,000 บาท (ถ้วนหน้า)</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>การจ้างงาน:</strong>ตั้งเป้าจ้างงานคนพิการ 60,000 ตำแหน่ง ภายในระยะเวลา 3 ปี</div>
-                                    <div><strong>สภาพแวดล้อม:</strong>จัดสรรงบประมาณช่วยเหลือปรับปรุงบ้านพักอาศัยเพื่อให้คนพิการใช้ชีวิตในบ้านได้อย่างสะดวก เพิ่มผู้ดูแลคนพิการ</div>
-                                    <div><strong>การสื่อสาร:</strong>เพิ่มจำนวนล่ามภาษามือในหน่วยงานรัฐและสนับสนุนทุนการศึกษาสำหรับคนพิการ</div>
-                                    <div><strong>การดูแล:</strong>เพิ่มผู้ดูแลคนพิการ เพิ่มงบจัดซื้ออุปกรณ์ ในสถานสงเคราะห์คนพิการ</div>
-                                    <div><strong>การเงิน:</strong>ส่งเสริมการจัดตั้งกองทุนสงเคราะห์คนพิการ สนับสนุนทุนการศึกษาของคนพิการ</div>
-                                </td>
-                            </tr>
-                            <tr class="border-utn">
-                                <th scope="row" class="font-bold">รวมไทยสร้างชาติ</th>
-                                <td class="font-semibold text-indigo-900 text-center">6</td>
-                                <td class="font-semibold text-indigo-900">ร.ต.อ.หญิง อัยรดา บำรุงรักษ์</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-rep">ตัวแทนพรรค</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> คณะทำงานเทคโนโลยีเพื่อสวัสดิการ และทีมโฆษกพรรค
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานด้านบริหารจัดการข้อมูลกลาง (Big Data) เพื่อการกระจายงบประมาณช่วยเหลือให้ถึงมือ</p>
-                                </td>
-                                <td class="font-bold">1,500 - 2,000 บาท</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>เทคโนโลยี:</strong>อัปเกรดแอปพลิเคชัน "เป๋าตัง" เป็น Super App ทางการเงินเพื่อเป็นศูนย์กลางการรับสิทธิสวัสดิการแบบเบ็ดเสร็จ</div>
-                                    <div><strong>ค่าครองชีพ:</strong>ลดราคาน้ำมันและค่าพลังงานเพื่อช่วยแบ่งเบาภาระต้นทุนชีวิตของผู้ดูแลและคนพิการ</div>
-                                    <div><strong>ฐานข้อมูล:</strong>บูรณาการฐานข้อมูลกลุ่มเปราะบาง (Big Data) เพื่อส่งมอบความช่วยเหลือได้รวดเร็วและไม่ซ้ำซ้อน</div>
-                                    <div><strong>การยืนยันตัวตน:</strong>ผลักดันให้คนพิการได้มีบัตรประชาชนทุกคน เชื่อมโยงบัตรคนพิการ-บัตรประชาชน</div>
-                                    <div><strong>นักกีฬา:</strong>ดูแลสวัสดิการของนักกีฬาคนพิการ</div>
-                                </td>
-                            </tr>
-                            <tr class="border-kt">
-                                <th scope="row" class="font-bold">กล้าธรรม</th>
-                                <td class="font-semibold text-green-700 text-center">42</td>
-                                <td class="font-semibold text-green-700">ศุภวิชญ์ จันทร์เสถียร</td>
-                                <td class="text-center">
-                                    <span class="badge badge-pwd">คนพิการ (ร่างกาย)</span>
-                                </td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> มีคนพิการเป็นผู้สมัคร ส.ส. บัญชีรายชื่อ
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นทีมงานด้านบริหารจัดการข้อมูลกลาง (Big Data) เพื่อการกระจายงบประมาณช่วยเหลือให้ถึงมือ</p>
-                                </td>
-                                <td class="text-slate-500">สวัสดิการแบบมีส่วนร่วม</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>การมีส่วนร่วม:</strong>ผลักดันให้คนพิการมีบทบาทในคณะกรรมการชุดต่างๆ ของท้องถิ่นเพื่อกำหนดงบประมาณเอง</div>
-                                    <div><strong>อาชีพ:</strong>สนับสนุนวิสาหกิจเพื่อสังคม (SE) ที่บริหารงานโดยคนพิการให้เข้าถึงแหล่งทุนได้ง่ายขึ้น ผลักดัน สถาบันฝึกอาชีพคนพิการ</div>
-                                    <div><strong>สิทธิ:</strong>เน้นนโยบาย "ความเท่าเทียมในโอกาส" มากกว่าการรับบริจาคเพื่อสร้างศักดิ์ศรีความเป็นมนุษย์</div>
-                                    <div><strong>อาคารสถานที่:</strong>ผลักดัน หมู่บ้านคนพิการ ราคาประหยัด ผ่อนได้</div>
-                                </td>
-                            </tr>
-                            <tr class="border-eco">
-                                <th scope="row" class="font-bold">เศรษฐกิจ</th>
-                                <td class="font-semibold text-yellow-700 text-center">11</td>
-                                <td class="font-semibold text-yellow-700">ส่งศักดิ์ ฉัตรชูสกุล</td>
-                                <td class="text-center">
-                                    <span class="badge badge-pwd">คนพิการ (ร่างกาย)</span>
-                                </td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> มีคนพิการเป็นผู้สมัคร ส.ส. บัญชีรายชื่อลำดับที่ 6 (ลำดับต้นของพรรค)
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">ให้พื้นที่คนพิการในลำดับความสำคัญสูง</p>
-                                </td>
-                                <td class="text-slate-500">เศรษฐกิจฐานรากคนพิการ</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>เศรษฐกิจ:</strong>นโยบาย "คนพิการสร้างชาติ" สนับสนุนการเข้าถึงตลาดค้าขายดิจิทัลและแหล่งเงินทุนดอกเบี้ยต่ำ ขยายฐานแรงงานเปลี่ยนคนพิการเป็นพลัง</div>
-                                    <div><strong>ชุมชน:</strong>พัฒนาศูนย์พัฒนาอาชีพคนพิการในระดับอำเภอเพื่อให้คนพิการไม่ต้องย้ายถิ่นฐานเข้ากรุงเทพฯ</div>
-                                    <div><strong>การศึกษา:</strong>ทุนการศึกษาพิเศษสำหรับคนพิการในสาขาที่ตลาดแรงงานสมัยใหม่ต้องการ (Skill Re-training)</div>
-                                </td>
-                            </tr>
-                            <tr class="border-op">
-                                <th scope="row" class="font-bold">โอกาสใหม่</th>
-                                <td class="font-semibold text-pink-700 text-center">44</td>
-                                <td class="font-semibold text-slate-500">ไม่มีข้อมูล</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-rep">ไม่มีข้อมูล</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> ไม่มีข้อมูล
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นการเข้าถึงการศึกษาเด็กและการจ้างงาน</p>
-                                </td>
-                                <td class="text-slate-500">ไม่มีข้อมูล</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>การจ้างงาน:</strong>เพิ่มโควตาการจ้างงานคนพิการ จาก 100:1 เป็น 50:1</div>
-                                    <div><strong>การเงิน:</strong>เปลี่ยนจากการสงเคราะห์ เป็น สิทธิ</div>
-                                    <div><strong>การศึกษา:</strong>ส่งเสริมให้โรงเรียนมี Universal design สำหรับผู้เรียนที่มีความพิการ</div>
-                                </td>
-                            </tr>
-                            <tr class="border-tns">
-                                <th scope="row" class="font-bold">ไทยก้าวใหม่</th>
-                                <td class="font-semibold text-slate-900 text-center">49</td>
-                                <td class="font-semibold text-slate-500">ไม่มีข้อมูล</td>
-                                <td class="p-3 border-b align-top"><span class="badge badge-rep">ไม่มีข้อมูล</span></td>
-                                <td class="p-3 border-b align-top">
-                                    <div class="highlight-team">
-                                        <strong>ทีมงานหลัก:</strong> ไม่มีข้อมูล
-                                    </div>
-                                    <p class="mt-2 text-xs text-slate-500">เน้นใช้AIยกระดับชีวิตคนพิการ</p>
-                                </td>
-                                <td class="text-slate-500">ไม่มีข้อมูล</td>
-                                <td class="p-3 border-b align-top">
-                                    <div><strong>ขนส่งสาธารณะ:</strong>ปรับโครงสร้างขนส่งสาธารณะ และพื้นที่สาธารณะให้เข้าถึงได้อย่างแท้จริง</div>
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>เทคโนโลยี:</strong></li>อัปเกรดแอปพลิเคชัน "เป๋าตัง" เป็น <span lang="en">Super App</span> ทางการเงินเพื่อเป็นศูนย์กลางการรับสิทธิสวัสดิการแบบเบ็ดเสร็จ<li><strong>ค่าครองชีพ:</strong>ลดราคาน้ำมันและค่าพลังงานเพื่อช่วยแบ่งเบาภาระต้นทุนชีวิตของผู้ดูแลและคนพิการ</li><li><strong>ฐานข้อมูล:</strong></li>บูรณาการฐานข้อมูลกลุ่มเปราะบาง (<span lang="en">Big Data</span>) เพื่อส่งมอบความช่วยเหลือได้รวดเร็วและไม่ซ้ำซ้อน<li><strong>การยืนยันตัวตน:</strong>ผลักดันให้คนพิการได้มีบัตรประชาชนทุกคน เชื่อมโยงบัตรคนพิการ-บัตรประชาชน</li><li><strong>นักกีฬา:</strong>ดูแลสวัสดิการของนักกีฬาคนพิการ</li></ul></td>
+</tr>
+<tr class="border-pt" id="party-9">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-9">เพื่อไทย</a></th>
+<td class="font-semibold text-red-600 text-center">9</td>
+<td class="font-semibold text-red-600">ธิติวัฐ อดิศรพันธ์กุล</td>
+<td class="p-3 border-b align-top"><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong></div> ทีมเศรษฐกิจดิจิทัล และคณะทำงานด้านการพัฒนาที่ยั่งยืน (<span lang="en">SDGs</span>)
                                     
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+<p class="mt-2 text-xs text-slate-500"></p>เน้นทีมงานรุ่นใหม่ที่เชี่ยวชาญด้าน <span lang="en">Technology Integration</span> และการบริหารจัดการงบประมาณภาครัฐ
+</td>
+<td class="font-bold">เติมรายได้ให้ถึง 3,000 บาท (MIG)</td>
+<td class="p-3 border-b align-top">
 
-        <!-- CHART -->
-        <section class="space-y-6">
-            <div class="border-l-4 border-slate-600 pl-4">
-                <h2 class="text-2xl font-bold text-slate-800">เพดานเบี้ยความพิการที่เสนอ (บาท/เดือน)</h2>
-                <div>กรณีไม่ระบุตัวเลขจะแสดงตามข้อมูลเบี้ยความพิการเดิม</div>
-            </div>
-            
-            <div class="card p-8">
-                <div class="chart-container">
-                    <canvas id="allowanceChart" role="img" aria-describedby="allowanceChartDesc"></canvas>
-                    <p id="allowanceChartDesc" class="sr-only">กราฟแท่งแสดงเพดานเบี้ยความพิการที่เสนอ (บาทต่อเดือน) แยกตามพรรคการเมือง ข้อมูลตัวเลขอยู่ในตารางใต้กราฟ</p>
 
-                    <details class="mt-6">
-                        <summary class="cursor-pointer font-semibold text-white text-right">ดูข้อมูลกราฟแบบตาราง (เหมาะสำหรับผู้อ่านหน้าจอ)</summary>
-                        <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200">
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>เทคโนโลยี:</strong>ระบบข้อมูลภาษามือ/เสียงในทุกแพลตฟอร์มรัฐ</li><li><strong>ทักษะและงาน:</strong></li>พัฒนาศูนย์การศึกษาพิเศษและเพิ่มครูเฉพาะทาง การสร้างรายได้ด้วย <span lang="en">Job Matching Platform</span> <li><strong>สิทธิมนุษยชน:</strong>ตั้งกลไกตรวจสอบการละเมิดสิทธิมนุษยชนที่เป็นอิสระสำหรับกลุ่มเปราะบาง</li><li><strong>อาคารสถานที่:</strong>ปรับปรุงตัวอาคารสถานที่และบริการต่างๆ ของหน่วยงานรัฐ ให้ทุกคนเข้าถึงกันอย่างเท่าเทียม</li><li><strong>กฎหมาย:</strong>ผลักดันกฎหมายส่งเสริม universal design และมาตรการต่างๆเพื่อสนับสนุนอย่างเป็นรูปธรรม</li></ul></td>
+</tr>
+<tr class="border-eco" id="party-11">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-11">เศรษฐกิจ</a></th>
+<td class="font-semibold text-yellow-700 text-center">11</td>
+<td class="font-semibold text-yellow-700">ส่งศักดิ์ ฉัตรชูสกุล</td>
+<td class="text-center">
+<span class="badge badge-pwd">คนพิการ (ร่างกาย)</span>
+</td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> มีคนพิการเป็นผู้สมัคร ส.ส. บัญชีรายชื่อลำดับที่ 6 (ลำดับต้นของพรรค)
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">ให้พื้นที่คนพิการในลำดับความสำคัญสูง</p>
+</td>
+<td class="text-slate-500">เศรษฐกิจฐานรากคนพิการ</td>
+<td class="p-3 border-b align-top">
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>เศรษฐกิจ:</strong>นโยบาย "คนพิการสร้างชาติ" สนับสนุนการเข้าถึงตลาดค้าขายดิจิทัลและแหล่งเงินทุนดอกเบี้ยต่ำ ขยายฐานแรงงานเปลี่ยนคนพิการเป็นพลัง</li><li><strong>ชุมชน:</strong>พัฒนาศูนย์พัฒนาอาชีพคนพิการในระดับอำเภอเพื่อให้คนพิการไม่ต้องย้ายถิ่นฐานเข้ากรุงเทพฯ</li><li><strong>การศึกษา:</strong></li>ทุนการศึกษาพิเศษสำหรับคนพิการในสาขาที่ตลาดแรงงานสมัยใหม่ต้องการ (<span lang="en">Skill Re-training</span>)</ul></td>
+</tr>
+<tr class="border-dem" id="party-27">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-27">ประชาธิปัตย์</a></th>
+<td class="font-semibold text-sky-600 text-center">27</td>
+<td class="font-semibold text-sky-600">ปทิตตา ไชยปาน</td>
+<td class="p-3 border-b align-top"><span class="badge badge-pwd">คนพิการ (สายตา)</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> มีคนพิการทางสายตาเป็นหัวหอกหลัก และทีมกฎหมายสิทธิมนุษยชน
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">ดึงผู้เชี่ยวชาญด้านกฎหมายคนพิการและนิติศาสตร์มาร่วมทีม เพื่อเน้นการปฏิรูปโครงสร้างทางกฎหมาย</p>
+</td>
+<td class="font-bold">1,600 บาท (เบี้ยคูณสอง)</td>
+<td class="p-3 border-b align-top">
+
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>ฟื้นฟู:</strong>จัดให้มีบริการฟื้นฟูความพิการ และอุปกรณ์ช่วยการเคลื่อนไหวอย่างทั่วถึง</li><li><strong>การศึกษา:</strong>ผลักดันการศึกษาฟรีตั้งแต่แรกพบความพิการ</li><li><strong>อาคารสถานที่:</strong>50,000 บาท เพื่อบ้านปลอดภัยผู้สูงวัย และผู้พิการ ยกระดับความปลอดภัยในบ้านตั้งแต่ต้นทาง</li><li><strong>การจ้างงาน:</strong>จ้างงานคนพิการ 1% บูรณาการฐานข้อมูลคนพิการ เชื่อม “คนพิการ–งาน–นายจ้าง” ให้จ้างได้จริง ทำงานได้จริง และอยู่ได้ยั่งยืน และโครการฝึกอาชีพ สร้างรายได้</li></ul></td>
+</tr>
+<tr class="border-bjt" id="party-37">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-37">ภูมิใจไทย</a></th>
+<td class="font-semibold text-blue-800 text-center">37</td>
+<td class="font-semibold text-blue-800">อนุสรี ทับสุวรรณ</td>
+<td class="p-3 border-b align-top"><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> ทีมที่ปรึกษาจากกรรมาธิการสวัสดิการสังคม และผู้เชี่ยวชาญด้านกฎหมายแรงงาน
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">เน้นทีมงานที่มีความสัมพันธ์อันดีกับองค์กรภาครัฐและพม. มีประสบการณ์ขับเคลื่อนกฎหมายจ้างงานคนพิการ</p>
+</td>
+<td class="text-slate-500">ไม่มีข้อมูล</td>
+<td class="p-3 border-b align-top">
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>ไม่มีข้อมูลนโยบายเรื่องคนพิการโดยตรงมีเพียงหัวข้อที่อยู่ภายใต้นโยบายอื่น และนโยบายทำต่อเนื่องจากสิ่งที่เคยดำเนินการเดิมในการเลือกตั้งครั้งก่อนเท่านั้น</strong></li></ul></td>
+</tr>
+<tr class="border-kt" id="party-42">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-42">กล้าธรรม</a></th>
+<td class="font-semibold text-green-700 text-center">42</td>
+<td class="font-semibold text-green-700">ศุภวิชญ์ จันทร์เสถียร</td>
+<td class="text-center">
+<span class="badge badge-pwd">คนพิการ (ร่างกาย)</span>
+</td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> มีคนพิการเป็นผู้สมัคร ส.ส. บัญชีรายชื่อ
+                                    </div>
+<p class="mt-2 text-xs text-slate-500"></p>เน้นทีมงานด้านบริหารจัดการข้อมูลกลาง (<span lang="en">Big Data</span>) เพื่อการกระจายงบประมาณช่วยเหลือให้ถึงมือ
+</td>
+<td class="text-slate-500">สวัสดิการแบบมีส่วนร่วม</td>
+<td class="p-3 border-b align-top">
+
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>การมีส่วนร่วม:</strong>ผลักดันให้คนพิการมีบทบาทในคณะกรรมการชุดต่างๆ ของท้องถิ่นเพื่อกำหนดงบประมาณเอง</li><li><strong>อาชีพ:</strong>สนับสนุนวิสาหกิจเพื่อสังคม (SE) ที่บริหารงานโดยคนพิการให้เข้าถึงแหล่งทุนได้ง่ายขึ้น ผลักดัน สถาบันฝึกอาชีพคนพิการ</li><li><strong>สิทธิ:</strong>เน้นนโยบาย "ความเท่าเทียมในโอกาส" มากกว่าการรับบริจาคเพื่อสร้างศักดิ์ศรีความเป็นมนุษย์</li><li><strong>อาคารสถานที่:</strong>ผลักดัน หมู่บ้านคนพิการ ราคาประหยัด ผ่อนได้</li></ul></td>
+</tr>
+<tr class="border-op" id="party-44">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-44">โอกาสใหม่</a></th>
+<td class="font-semibold text-pink-700 text-center">44</td>
+<td class="font-semibold text-slate-500">ไม่มีข้อมูล</td>
+<td class="p-3 border-b align-top"><span class="badge badge-rep">ไม่มีข้อมูล</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> ไม่มีข้อมูล
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">เน้นการเข้าถึงการศึกษาเด็กและการจ้างงาน</p>
+</td>
+<td class="text-slate-500">ไม่มีข้อมูล</td>
+<td class="p-3 border-b align-top">
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>การจ้างงาน:</strong>เพิ่มโควตาการจ้างงานคนพิการ จาก 100:1 เป็น 50:1</li><li><strong>การเงิน:</strong>เปลี่ยนจากการสงเคราะห์ เป็น สิทธิ</li><li><strong>การศึกษา:</strong>ส่งเสริมให้โรงเรียนมี Universal design สำหรับผู้เรียนที่มีความพิการ</li></ul></td>
+</tr>
+<tr class="border-pp" id="party-46">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-46">พรรคประชาชน</a></th>
+<td class="font-semibold text-orange-600 text-center">46</td>
+<td class="font-semibold text-orange-600">อรรถพล ศรีชิษณุวรานนท์</td>
+<td class="p-3 border-b align-top"><span class="badge badge-pwd">คนพิการ (ร่างกาย)</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> มีคนพิการร่วมเป็นคณะทำงานฝ่ายนโยบาย และเครือข่ายคนพิการระดับพื้นที่ (IL)
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">ทำงานใกล้ชิดกับเครือข่ายภาคประชาชนและกลุ่มนักเคลื่อนไหวสิทธิคนพิการมานานกว่า 10 ปี</p>
+</td>
+<td class="font-bold">1,200 (ถ้วนหน้า) / 2,000 (รุนแรง)</td>
+<td class="p-3 border-b align-top">
+
+
+
+
+
+
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>โครงสร้างสวัสดิการ:</strong>จัดตั้ง "ธนาคารอุปกรณ์" เพื่อสนับสนุนรถเข็นวีลแชร์ เครื่องช่วยฟัง และอุปกรณ์จำเป็นอย่างทั่วถึง</li><li><strong>การดูแล:</strong></li>ปฏิรูประบบผู้ช่วยคนพิการ (<span lang="en">Personal Assistant: PA</span>) และกำหนดสัดส่วนผู้ช่วย 1 ต่อ 1 สำหรับผู้ที่จำเป็น จัดนักบริบาลอาชีพที่หน่วยบริการปฐมภูมิ<li><strong>การศึกษา:</strong>ปฏิรูปศูนย์การศึกษาเด็กพิเศษและสร้างแพลตฟอร์มการเรียนรู้ทักษะแรงงาน เพิ่มโอกาสคนพิการเข้าสู่การทำงาน</li><li><strong>การยืนยันตัวตน:</strong>ปรับปรุงกระบวนการออกและต่ออายุบัตรคนพิการ เพื่อลดภาระคนพิการโดยเฉพาะผู้พิการติดเตียง</li><li><strong>บริการสาธารณะ:</strong>สร้างระบบขนส่งสาธารณะเพื่อทุกคน เพิ่มอำนาจและงบประมาณท้องถิ่นในการจัดบริการสาธารณะเพื่อคนพิการ</li><li><strong>สังคม:</strong>บูรณาการระบบการดูแลรายบุคคลในระดับตำบล ลดกลุ่มคนพิการตกหล่นในชุมชน</li><li><strong>การแพทย์:</strong>ลดภาวะพิการ ด้วยระบบดูแลผู้ป่วยระยะกลาง และผลิตนักกายภาพบำบัดบริการฟื้นฟูที่ รพช./รพ.สต.</li><li><strong>การเงิน:</strong>กองทุนดูแลผู้ป่วยระยะยาวและผู้มีภาวะพึ่งพิงใหม่</li><li><strong>กฎหมาย:</strong>ตรากฎหมายว่าด้วยการขจัดการเลือกปฎิบัติ</li></ul></td>
+</tr>
+<tr class="border-tst" id="party-48">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-48">ไทยสร้างไทย</a></th>
+<td class="font-semibold text-purple-600 text-center">48</td>
+<td class="font-semibold text-purple-600">ปริเยศ อังกูรกิตติ</td>
+<td class="p-3 border-b align-top"><span class="badge badge-rep">ผู้เชี่ยวชาญ</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> ทีมงานอาสาสมัครภาคประชาชน และคณะทำงานรัฐสวัสดิการ
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">เน้นคนทำงานพื้นที่ที่เข้าใจปัญหาความยากจนซ้ำซ้อนในกลุ่มคนพิการและผู้สูงอายุ</p>
+</td>
+<td class="font-bold">3,000 บาท (ถ้วนหน้า)</td>
+<td class="p-3 border-b align-top">
+
+
+
+
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>การจ้างงาน:</strong>ตั้งเป้าจ้างงานคนพิการ 60,000 ตำแหน่ง ภายในระยะเวลา 3 ปี</li><li><strong>สภาพแวดล้อม:</strong>จัดสรรงบประมาณช่วยเหลือปรับปรุงบ้านพักอาศัยเพื่อให้คนพิการใช้ชีวิตในบ้านได้อย่างสะดวก เพิ่มผู้ดูแลคนพิการ</li><li><strong>การสื่อสาร:</strong>เพิ่มจำนวนล่ามภาษามือในหน่วยงานรัฐและสนับสนุนทุนการศึกษาสำหรับคนพิการ</li><li><strong>การดูแล:</strong>เพิ่มผู้ดูแลคนพิการ เพิ่มงบจัดซื้ออุปกรณ์ ในสถานสงเคราะห์คนพิการ</li><li><strong>การเงิน:</strong>ส่งเสริมการจัดตั้งกองทุนสงเคราะห์คนพิการ สนับสนุนทุนการศึกษาของคนพิการ</li></ul></td>
+</tr>
+<tr class="border-tns" id="party-49">
+<th class="font-bold" scope="row"><a class="hover:underline underline-offset-4" href="#party-49">ไทยก้าวใหม่</a></th>
+<td class="font-semibold text-slate-900 text-center">49</td>
+<td class="font-semibold text-slate-500">ไม่มีข้อมูล</td>
+<td class="p-3 border-b align-top"><span class="badge badge-rep">ไม่มีข้อมูล</span></td>
+<td class="p-3 border-b align-top">
+<div class="highlight-team">
+<strong>ทีมงานหลัก:</strong> ไม่มีข้อมูล
+                                    </div>
+<p class="mt-2 text-xs text-slate-500">เน้นใช้AIยกระดับชีวิตคนพิการ</p>
+</td>
+<td class="text-slate-500">ไม่มีข้อมูล</td>
+<td class="p-3 border-b align-top">
+
+<ul class="list-disc pl-5 space-y-1"><li><strong>ขนส่งสาธารณะ:</strong>ปรับโครงสร้างขนส่งสาธารณะ และพื้นที่สาธารณะให้เข้าถึงได้อย่างแท้จริง</li></ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- CHART -->
+<section class="space-y-6" id="chart-section" tabindex="-1">
+<div class="border-l-4 border-slate-600 pl-4">
+<h2 class="text-2xl font-bold text-slate-800">เพดานเบี้ยความพิการที่เสนอ (บาท/เดือน)</h2>
+<div>กรณีไม่ระบุตัวเลขจะแสดงตามข้อมูลเบี้ยความพิการเดิม</div>
+</div><p class="text-sm text-slate-600 mt-2" id="chart-summary">สรุป: ข้อเสนอสูงสุด 3,000 บาท/เดือน (เพื่อไทย, ไทยสร้างไทย) และมีหลายพรรคเสนอ 800 บาท/เดือน</p>
+<div class="card p-8">
+<div class="chart-container">
+<canvas aria-describedby="allowanceChartDesc" id="allowanceChart" role="img"></canvas>
+<p class="sr-only" id="allowanceChartDesc">กราฟแท่งแสดงเพดานเบี้ยความพิการที่เสนอ (บาทต่อเดือน) แยกตามพรรคการเมือง ข้อมูลตัวเลขอยู่ในตารางใต้กราฟ</p>
+<details class="mt-6">
+<summary class="cursor-pointer font-semibold text-white text-right" aria-controls="chart-table-wrap">ดูข้อมูลกราฟแบบตาราง (เหมาะสำหรับผู้อ่านหน้าจอ)</summary>
+<div id="chart-table-wrap" class="mt-4 overflow-x-auto rounded-xl border border-slate-200">
                             <table class="w-full text-left">
-                                <caption class="sr-only">ตารางข้อมูลเพดานเบี้ยความพิการที่เสนอ (บาทต่อเดือน) ตามพรรคการเมือง</caption>
-                                <thead class="bg-slate-50">
-                                    <tr>
-                                        <th class="p-3 border-b">พรรค</th>
-                                        <th class="p-3 border-b text-center">จำนวน (บาท/เดือน)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="p-3 border-b">พรรคประชาชน</td><td class="p-3 border-b text-center font-bold">2,000</td></tr>
-                                    <tr><td class="p-3 border-b">พรรคภูมิใจไทย</td><td class="p-3 border-b text-center font-bold">800</td></tr>
-                                    <tr><td class="p-3 border-b">พรรคเพื่อไทย</td><td class="p-3 border-b text-center font-bold">3,000</td></tr>
-                                    <tr><td class="p-3 border-b">พรรคประชาธิปัตย์</td><td class="p-3 border-b text-center font-bold">1,600</td></tr>
-                                    <tr><td class="p-3 border-b">ไทยสร้างไทย</td><td class="p-3 border-b text-center font-bold">3,000</td></tr>
-                                    <tr><td class="p-3 border-b">รวมไทยสร้างชาติ</td><td class="p-3 border-b text-center font-bold">2,000</td></tr>
-                                    <tr><td class="p-3 border-b">กล้าธรรม</td><td class="p-3 border-b text-center font-bold">800</td></tr>
-                                    <tr><td class="p-3 border-b">เศรษฐกิจ</td><td class="p-3 border-b text-center font-bold">800</td></tr>
-                                    <tr><td class="p-3 border-b">โอกาสใหม่</td><td class="p-3 border-b text-center font-bold">800</td></tr>
-                                    <tr><td class="p-3 border-b">ไทยก้าวใหม่</td><td class="p-3 border-b text-center font-bold">800</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </details>
-                </div>
-                <div id="allowanceLegendWrap" class="mt-8">
-                    <div id="allowanceLegend"
-                         class="flex flex-wrap items-center gap-3 text-[11px] md:text-xs"
-                         aria-label="ตัวเลือกชื่อพรรคสำหรับซ่อนหรือแสดงข้อมูลในกราฟ">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- Header -->
-        <header class="mb-10 text-center md:text-left border-b-4 border-blue-600 pb-8">
-            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">คู่มือเลือกตั้งและประชามติ 2569</h2>
-            </header>
-
-        <!-- Section: Calendar -->
-        <section id="calendar-section" class="mb-12" aria-labelledby="cal-heading">
-            <h2 id="cal-heading" class="text-2xl font-bold mb-6 flex items-center gap-2 text-slate-800">
-                <span aria-hidden="true">📅</span> วันสำคัญที่ต้องบันทึกไว้
+<caption class="sr-only">ตารางข้อมูลเพดานเบี้ยความพิการที่เสนอ (บาทต่อเดือน) ตามพรรคการเมือง</caption>
+<thead class="bg-slate-50">
+<tr>
+<th class="p-3 border-b">พรรค</th>
+<th class="p-3 border-b text-center">จำนวน (บาท/เดือน)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="p-3 border-b">พรรคประชาชน</td><td class="p-3 border-b text-center font-bold">2,000</td></tr>
+<tr><td class="p-3 border-b">พรรคภูมิใจไทย</td><td class="p-3 border-b text-center font-bold">800</td></tr>
+<tr><td class="p-3 border-b">พรรคเพื่อไทย</td><td class="p-3 border-b text-center font-bold">3,000</td></tr>
+<tr><td class="p-3 border-b">พรรคประชาธิปัตย์</td><td class="p-3 border-b text-center font-bold">1,600</td></tr>
+<tr><td class="p-3 border-b">ไทยสร้างไทย</td><td class="p-3 border-b text-center font-bold">3,000</td></tr>
+<tr><td class="p-3 border-b">รวมไทยสร้างชาติ</td><td class="p-3 border-b text-center font-bold">2,000</td></tr>
+<tr><td class="p-3 border-b">กล้าธรรม</td><td class="p-3 border-b text-center font-bold">800</td></tr>
+<tr><td class="p-3 border-b">เศรษฐกิจ</td><td class="p-3 border-b text-center font-bold">800</td></tr>
+<tr><td class="p-3 border-b">โอกาสใหม่</td><td class="p-3 border-b text-center font-bold">800</td></tr>
+<tr><td class="p-3 border-b">ไทยก้าวใหม่</td><td class="p-3 border-b text-center font-bold">800</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+<div class="mt-8" id="allowanceLegendWrap">
+<div aria-label="ตัวเลือกชื่อพรรคสำหรับซ่อนหรือแสดงข้อมูลในกราฟ" class="flex flex-wrap items-center gap-3 text-[11px] md:text-xs" id="allowanceLegend">
+</div>
+</div>
+</div>
+</section>
+<!-- Header -->
+<header class="mb-10 text-center md:text-left border-b-4 border-blue-600 pb-8" id="guide-section" tabindex="-1">
+<h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">คู่มือเลือกตั้งและประชามติ 2569</h2>
+</header>
+<!-- Section: Calendar -->
+<section aria-labelledby="cal-heading" class="mb-12" id="calendar-section" tabindex="-1">
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-slate-800" id="cal-heading">
+<span aria-hidden="true">📅</span> วันสำคัญที่ต้องบันทึกไว้
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-6 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-lg relative overflow-hidden">
-                    <div class="relative z-10">
-                        <p class="text-lg opacity-90">วันเลือกตั้งล่วงหน้า (ในเขต/นอกเขต)</p>
-                        <p class="text-4xl font-bold mt-2">1 กุมภาพันธ์ 2569</p>
-                        <p class="mt-2 flex items-center gap-2"><span class="text-xl">⏰</span> 08:00 - 17:00 น.</p>
-                    </div>
-                    <span class="absolute right-[-20px] bottom-[-20px] text-9xl opacity-10 font-bold" aria-hidden="true">PRE</span>
-                </div>
-                <div class="p-6 bg-gradient-to-br from-emerald-600 to-emerald-800 text-white rounded-2xl shadow-lg relative overflow-hidden">
-                    <div class="relative z-10">
-                        <p class="text-lg opacity-90">วันเลือกตั้งสมาชิกสภาผู้แทนราษฎร</p>
-                        <p class="text-4xl font-bold mt-2">8 กุมภาพันธ์ 2569</p>
-                        <p class="mt-2 flex items-center gap-2"><span class="text-xl">⏰</span> 08:00 - 17:00 น.</p>
-                    </div>
-                    <span class="absolute right-[-20px] bottom-[-20px] text-9xl opacity-10 font-bold" aria-hidden="true">VOTE</span>
-                </div>
-            </div>
-        </section>
-
-       <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-                <span class="p-2 bg-slate-200 rounded-lg" aria-hidden="true">🚶‍♂️</span> 
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-lg relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-lg opacity-90">วันเลือกตั้งล่วงหน้า (ในเขต/นอกเขต)</p>
+<p class="text-4xl font-bold mt-2">1 กุมภาพันธ์ 2569</p>
+<p class="mt-2 flex items-center gap-2"><span class="text-xl">⏰</span> 08:00 - 17:00 น.</p>
+</div>
+<span aria-hidden="true" class="absolute right-[-20px] bottom-[-20px] text-9xl opacity-10 font-bold">PRE</span>
+</div>
+<div class="p-6 bg-gradient-to-br from-emerald-600 to-emerald-800 text-white rounded-2xl shadow-lg relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-lg opacity-90">วันเลือกตั้งสมาชิกสภาผู้แทนราษฎร</p>
+<p class="text-4xl font-bold mt-2">8 กุมภาพันธ์ 2569</p>
+<p class="mt-2 flex items-center gap-2"><span class="text-xl">⏰</span> 08:00 - 17:00 น.</p>
+</div>
+<span aria-hidden="true" class="absolute right-[-20px] bottom-[-20px] text-9xl opacity-10 font-bold">VOTE</span>
+</div>
+</div>
+</section>
+<section class="space-y-6" id="steps-section" tabindex="-1">
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span aria-hidden="true" class="p-2 bg-slate-200 rounded-lg">🚶‍♂️</span> 
                 ลำดับการเข้าใช้สิทธิ
             </h2>
-
-            <!-- PART 1: Election -->
-            <div class="mb-8">
-                <h3 class="text-lg font-bold text-blue-700 mb-4 flex items-center gap-2">
+<!-- PART 1: Election -->
+<div class="mb-8">
+<h3 class="text-lg font-bold text-blue-700 mb-4 flex items-center gap-2">
                     ส่วนที่ 1: การเลือกตั้งสมาชิกสภาผู้แทนราษฎร (สส.)
                 </h3>
-                
-                <div class="step-container">
-                    <div class="mb-6 relative">
-                        <h4 class="font-bold">1. ตรวจสอบรายชื่อและรับบัตรเลือกตั้ง (2 ใบ)</h4>
-                        <p class="text-slate-600">บัตรสั้นสีเขียว(แบบแบ่งเขต) และ บัตรยาวสีชมพู (แบบบัญชีรายชื่อ) เจ้าหน้าที่จะช่วยทาบแผ่นเบรลล์ให้
-                            <br><strong>บัตรสั้นสีเขียวสำหรับเลือกสมาชิกสภาผู้แทนราษฎรแบบแบ่งเขต หมายเลขผู้สมัครแต่ละพรรคเปลี่ยนไปตามแต่ละท้องที่กรุณตรวจสอบก่อนลงคะแนน</strong>
-                            <br>- มีอักษรเบรลล์แสดงหมายเลขผู้สมัครและข้อความไม่เลือกผู้สมัครผู้ใด
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทแต่ละช่องอยู่ด้านขวาของอักษรเบรลล์
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทเลือกผู้สมัครแบ่งออกเป็น 2 แถว แถวละ 10 หมายเลข เรียงจากบนลงล่าง
-                            <br><strong>บัตรยาวสีชมพูสำหรับเลือกสมาชิกสภาผู้แทนราษฎรแบบบัญชีรายชื่อ เลือกตามหมายเลขพรรค</strong>
-                            <br>- มีอักษรเบรลล์แสดงหมายเลขบัญชีรายชื่อพรรคการเมืองและข้อความไม่เลือกบัญชีรายชื่อของพรรคการเมืองใด
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทแต่ละช่องอยู่ด้านขวาของอักษรเบรลล์
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทเลือกบัญชีรายชื่อพรรคการเมืองแบ่งออกเป็น 2 แถว
-                            <br>- แถวด้านซ้าย หมายเลข 1 ถึง 29 เรียงจากบนลงล่าง
-                            <br>- แถวด้านขวา หมายเลข 30 ถึง 57 เรียงจากบนลงล่าง
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทไม่เลือกบัญชีรายชื่อของพรรคการเมืองใดอยู่ด้านล่างขวาของบัตร
+<div class="step-container">
+<div class="mb-6 relative">
+<h4 class="font-bold">1. ตรวจสอบรายชื่อและรับบัตรเลือกตั้ง (2 ใบ)</h4>
+<p class="text-slate-600">บัตรสั้นสีเขียว(แบบแบ่งเขต) และ บัตรยาวสีชมพู (แบบบัญชีรายชื่อ) เจ้าหน้าที่จะช่วยทาบแผ่นเบรลล์ให้
+                            <br/><strong>บัตรสั้นสีเขียวสำหรับเลือกสมาชิกสภาผู้แทนราษฎรแบบแบ่งเขต หมายเลขผู้สมัครแต่ละพรรคเปลี่ยนไปตามแต่ละท้องที่กรุณตรวจสอบก่อนลงคะแนน</strong>
+<br/>- มีอักษรเบรลล์แสดงหมายเลขผู้สมัครและข้อความไม่เลือกผู้สมัครผู้ใด
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทแต่ละช่องอยู่ด้านขวาของอักษรเบรลล์
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทเลือกผู้สมัครแบ่งออกเป็น 2 แถว แถวละ 10 หมายเลข เรียงจากบนลงล่าง
+                            <br/><strong>บัตรยาวสีชมพูสำหรับเลือกสมาชิกสภาผู้แทนราษฎรแบบบัญชีรายชื่อ เลือกตามหมายเลขพรรค</strong>
+<br/>- มีอักษรเบรลล์แสดงหมายเลขบัญชีรายชื่อพรรคการเมืองและข้อความไม่เลือกบัญชีรายชื่อของพรรคการเมืองใด
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทแต่ละช่องอยู่ด้านขวาของอักษรเบรลล์
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทเลือกบัญชีรายชื่อพรรคการเมืองแบ่งออกเป็น 2 แถว
+                            <br/>- แถวด้านซ้าย หมายเลข 1 ถึง 29 เรียงจากบนลงล่าง
+                            <br/>- แถวด้านขวา หมายเลข 30 ถึง 57 เรียงจากบนลงล่าง
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทไม่เลือกบัญชีรายชื่อของพรรคการเมืองใดอยู่ด้านล่างขวาของบัตร
                         </p>
-                    </div>
-                    <div class="mb-6 relative">
-                        <h4 class="font-bold">2. ลงคะแนนและหย่อนหีบ สส.</h4>
-                        <p class="text-slate-600">ทำเครื่องหมาย X ในคูหาและหย่อนลงหีบตามสีบัตรให้เรียบร้อย</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Transition Instruction -->
-            <div class="my-8 p-6 bg-amber-50 border-l-8 border-amber-400 rounded-r-xl" role="alert">
-                <h3 class="font-bold text-amber-800 flex items-center gap-2">
+</div>
+<div class="mb-6 relative">
+<h4 class="font-bold">2. ลงคะแนนและหย่อนหีบ สส.</h4>
+<p class="text-slate-600">ทำเครื่องหมาย X ในคูหาและหย่อนลงหีบตามสีบัตรให้เรียบร้อย</p>
+</div>
+</div>
+</div>
+<!-- Transition Instruction -->
+<div class="my-8 p-6 bg-amber-50 border-l-8 border-amber-400 rounded-r-xl" role="alert">
+<h3 class="font-bold text-amber-800 flex items-center gap-2">
                     ⚠️ คำแนะนำการเคลื่อนย้าย (Transit)
                 </h3>
-                <p class="text-amber-900 mt-2">
+<p class="text-amber-900 mt-2">
                     เมื่อเสร็จจากส่วนเลือกตั้ง สส. แล้ว **ห้ามเดินออกจากหน่วยเลือกตั้งทันที** ให้ผู้พิการทางสายตาแจ้งเจ้าหน้าที่ (กปน.) ว่า "ต้องการไปจุดลงประชามติ" 
                     เจ้าหน้าที่จะนำทางท่านไปยังโต๊ะถัดไปซึ่งอยู่ในบริเวณใกล้เคียงกัน
                 </p>
-            </div>
-
-            <!-- PART 2: Referendum -->
-            <div class="mb-8">
-                <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center gap-2">
+</div>
+<!-- PART 2: Referendum -->
+<div class="mb-8">
+<h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center gap-2">
                     ส่วนที่ 2: การออกเสียงประชามติ (ไม่สามารถลงประชามติในวันเลือกตั้งล่วงหน้าได้)
                 </h3>
-                <div class="step-container" style="border-left-color: #a7f3d0;">
-                    <div class="mb-6 relative">
-                        <h4 class="font-bold">3. รับบัตรประชามติ (1 ใบ)</h4>
-                        <p class="text-slate-600">ยื่นบัตรประชาชนอีกครั้งที่โต๊ะประชามติ เพื่อรับบัตรเล็กสีเหลือง
-                            <br>- มีอักษรเบรลล์แสดงข้อความ เห็นชอบ ไม่เห็นชอบ  ไม่ประสงค์แสดงความคิดเห็น
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทเห็นชอบ ไม่เห็นชอบ อยู่ด้านล่างของอักษรเบรลล์
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาท ไม่ประสงค์แสดงความคิดเห็น อยู่ด้านขวาของอักษรเบรลล์
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทเห็นชอบอยู่ด้านซ้ายของบัตร
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทไม่เห็นชอบอยู่ด้านขวาของบัตร
-                            <br>- ช่องสำหรับทำเครื่องหมายกากบาทไม่ประสงค์แสดงความคิดเห็น อยู่ด้านล่างขวาของบัตร
+<div class="step-container" style="border-left-color: #a7f3d0;">
+<div class="mb-6 relative">
+<h4 class="font-bold">3. รับบัตรประชามติ (1 ใบ)</h4>
+<p class="text-slate-600">ยื่นบัตรประชาชนอีกครั้งที่โต๊ะประชามติ เพื่อรับบัตรเล็กสีเหลือง
+                            <br/>- มีอักษรเบรลล์แสดงข้อความ เห็นชอบ ไม่เห็นชอบ  ไม่ประสงค์แสดงความคิดเห็น
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทเห็นชอบ ไม่เห็นชอบ อยู่ด้านล่างของอักษรเบรลล์
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาท ไม่ประสงค์แสดงความคิดเห็น อยู่ด้านขวาของอักษรเบรลล์
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทเห็นชอบอยู่ด้านซ้ายของบัตร
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทไม่เห็นชอบอยู่ด้านขวาของบัตร
+                            <br/>- ช่องสำหรับทำเครื่องหมายกากบาทไม่ประสงค์แสดงความคิดเห็น อยู่ด้านล่างขวาของบัตร
                         </p>
-                    </div>
-                    <div class="mb-6 relative">
-                        <h4 class="font-bold">4. ลงคะแนน "เห็นชอบ" หรือ "ไม่เห็นชอบ"</h4>
-                        <p class="text-slate-600">ใช้แผ่นทาบบัตรอักษรเบรลล์พิเศษ ซึ่งจะมีช่องให้กาเพียง 2 ช่องหลักเท่านั้น</p>
-                    </div>
-                    <div class="relative">
-                        <h4 class="font-bold">5. หย่อนหีบประชามติ</h4>
-                        <p class="text-slate-600">ตรวจสอบให้มั่นใจว่าหย่อนลงใน "หีบประชามติ" เท่านั้น (แยกจากหีบ สส.)</p>
-                    </div>
-                </div>
-            </div>
+</div>
+<div class="mb-6 relative">
+<h4 class="font-bold">4. ลงคะแนน "เห็นชอบ" หรือ "ไม่เห็นชอบ"</h4>
+<p class="text-slate-600">ใช้แผ่นทาบบัตรอักษรเบรลล์พิเศษ ซึ่งจะมีช่องให้กาเพียง 2 ช่องหลักเท่านั้น</p>
+</div>
+<div class="relative">
+<h4 class="font-bold">5. หย่อนหีบประชามติ</h4>
+<p class="text-slate-600">ตรวจสอบให้มั่นใจว่าหย่อนลงใน "หีบประชามติ" เท่านั้น (แยกจากหีบ สส.)</p>
+</div>
+</div>
+</div>
+<!-- Summary Table for Screen Readers -->
+<h2 class="text-xl font-bold mb-4">สรุปจำนวนบัตรและหีบที่ต้องพบ</h2>
+<div class="overflow-x-auto rounded-xl border">
+<table class="w-full text-left" summary="สรุปจำนวนบัตรเลือกตั้งและประชามติ">
+<thead class="bg-slate-50">
+<tr>
+<th class="p-3 border-b">ประเภท</th>
+<th class="p-3 border-b text-center">จำนวนบัตร</th>
+<th class="p-3 border-b">ความช่วยเหลือพิเศษ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-3 border-b">เลือกตั้ง สส.</td>
+<td class="p-3 border-b text-center font-bold">2 ใบ</td>
+<td class="p-3 border-b text-sm">แผ่นทาบเบรลล์เบอร์พรรค/ผู้สมัคร</td>
+</tr>
+<tr>
+<td class="p-3">ออกเสียงประชามติ</td>
+<td class="p-3 text-center font-bold">1 ใบ</td>
+<td class="p-3 text-sm">แผ่นทาบเบรลล์ช่องเห็นชอบ/ไม่เห็นชอบ</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 
-            <!-- Summary Table for Screen Readers -->
-            <h2 class="text-xl font-bold mb-4">สรุปจำนวนบัตรและหีบที่ต้องพบ</h2>
-            <div class="overflow-x-auto rounded-xl border">
-                <table class="w-full text-left" summary="สรุปจำนวนบัตรเลือกตั้งและประชามติ">
-                    <thead class="bg-slate-50">
-                        <tr>
-                            <th class="p-3 border-b">ประเภท</th>
-                            <th class="p-3 border-b text-center">จำนวนบัตร</th>
-                            <th class="p-3 border-b">ความช่วยเหลือพิเศษ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="p-3 border-b">เลือกตั้ง สส.</td>
-                            <td class="p-3 border-b text-center font-bold">2 ใบ</td>
-                            <td class="p-3 border-b text-sm">แผ่นทาบเบรลล์เบอร์พรรค/ผู้สมัคร</td>
-                        </tr>
-                        <tr>
-                            <td class="p-3">ออกเสียงประชามติ</td>
-                            <td class="p-3 text-center font-bold">1 ใบ</td>
-                            <td class="p-3 text-sm">แผ่นทาบเบรลล์ช่องเห็นชอบ/ไม่เห็นชอบ</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <!-- Section: 22 Model Polling Stations -->
-        <section id="unit-section" class="mb-16" aria-labelledby="unit-heading">
-            <h2 id="unit-heading" class="text-2xl font-bold text-slate-800 mb-6">📍 ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ</h2>
-            <div class="overflow-x-auto">
-            <table class="w-full max-w-5xl mx-auto text-left border border-slate-200 rounded-xl overflow-hidden">
-                <thead class="bg-slate-50">
-                    <tr>
-                        <th scope="col" class="p-3 border-b font-semibold">จังหวัด</th>
-                        <th scope="col" class="p-3 border-b font-semibold">สถานที่ตั้งหน่วยเลือกตั้ง</th>
-                        <th scope="col" class="p-3 border-b font-semibold">ความช่วยเหลือพิเศษ (Accessibility Features)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">กรุงเทพฯ (เขตภาษีเจริญ)</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านบางแค</td>
-                        <td class="p-3 border-b align-top">ทางลาดเข้าสู่คูหา, อาสาสมัครช่วยพยุง, ราวจับพยุงตัว, บริการวีลแชร์สำรอง</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">กรุงเทพฯ (เขตพญาไท)</th>
-                        <td class="p-3 border-b align-top">โรงพยาบาลทหารผ่านศึก</td>
-                        <td class="p-3 border-b align-top">ลิฟต์สำหรับคนพิการ, เตียงเคลื่อนย้ายผู้ป่วย, ทีมพยาบาลดูแลพิเศษ</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">กรุงเทพฯ (เขตราชเทวี)</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาและฝึกอบรมคนพิการแห่งเอเชียแปซิฟิก (APCD)</td>
-                        <td class="p-3 border-b align-top">Universal Design ครบวงจร, ล่ามภาษามือประจำจุด, แผ่นทาบบัตรอักษรเบรลล์</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">กรุงเทพฯ (เขตดินแดง)</th>
-                        <td class="p-3 border-b align-top">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ (พม.)</td>
-                        <td class="p-3 border-b align-top">พื้นที่ราบเรียบ, ระบบเสียงประกาศขั้นตอน, ช่องทางเดินกว้างพิเศษสำหรับวีลแชร์</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">นนทบุรี</th>
-                        <td class="p-3 border-b align-top">สถานสงเคราะห์เด็กพิการและทางสมอง (บ้านนนทภูมิ)</td>
-                        <td class="p-3 border-b align-top">คูหาเลือกตั้งปรับระดับความสูงได้, อาสาสมัครที่มีทักษะสื่อสารกับคนพิการทางสติปัญญา</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">นนทบุรี</th>
-                        <td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการและทุพพลภาพ (บ้านพระประแดง)</td>
-                        <td class="p-3 border-b align-top">รถรับส่งภายในศูนย์ไปยังคูหา, ห้องน้ำคนพิการมาตรฐานสูง</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ปทุมธานี</th>
-                        <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านเฟื่องฟ้า</td>
-                        <td class="p-3 border-b align-top">คูหาเลือกตั้งแบบส่วนตัวสำหรับคนพิการทางจิตเวชหรือออทิสติก, ทางลาดมีขอบกันตก</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ปทุมธานี</th>
-                        <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านราชาวดี (ชาย)</td>
-                        <td class="p-3 border-b align-top">ป้ายสัญลักษณ์รูปภาพ (Pictogram) ขนาดใหญ่, อาสาสมัครนำทาง 1 ต่อ 1</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">นครปฐม</th>
-                        <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการ (วัดไร่ขิง)</td>
-                        <td class="p-3 border-b align-top">แผ่นทาบบัตรเลือกตั้งอักษรเบรลล์, ผิวสัมผัสต่างระดับนำทางไปยังคูหา</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ชลบุรี</th>
-                        <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดพระมหาไถ่ พัทยา</td>
-                        <td class="p-3 border-b align-top">ระบบเสียงนำทางผ่านแอปพลิเคชัน, แผ่นทาบบัตรเบรลล์ทุกหมายเลข, อาสาสมัครอ่านรายชื่อผู้สมัคร</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ชลบุรี</th>
-                        <td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการการุณยเวศม์</td>
-                        <td class="p-3 border-b align-top">พื้นที่จอดรถคนพิการใกล้คูหา, ทางลาดองศาต่ำพิเศษสำหรับวีลแชร์มือหมุน</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">เชียงใหม่</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์</td>
-                        <td class="p-3 border-b align-top">ช่องทางด่วน (Fast Track) สำหรับผู้สูงอายุ, เก้าอี้พักคอยพร้อมน้ำดื่มตามจุดต่างๆ</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">เชียงใหม่</th>
-                        <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดภาคเหนือ</td>
-                        <td class="p-3 border-b align-top">คู่มือผู้สมัครแบบอักษรเบรลล์และอักษรตัวขยายใหญ่, อาสาสมัครนำทางเข้าคูหา</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">พิษณุโลก</th>
-                        <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการพิษณุโลก</td>
-                        <td class="p-3 border-b align-top">ระบบล่ามภาษามือออนไลน์ (VRI), คูหาเลือกตั้งที่ผู้พิการทางการเคลื่อนไหวเข้าถึงได้ง่าย</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ขอนแก่น</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น</td>
-                        <td class="p-3 border-b align-top">พื้นทางเดินกันลื่น, ราวจับสแตนเลส, บริการช่วยเหลือกรณีฉุกเฉินทางการแพทย์</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ขอนแก่น</th>
-                        <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดขอนแก่น</td>
-                        <td class="p-3 border-b align-top">บัตรทาบอักษรเบรลล์ 3 ภาษา, ผังจำลองหน่วยเลือกตั้งแบบสัมผัส</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">นครราชสีมา</th>
-                        <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านแคราย</td>
-                        <td class="p-3 border-b align-top">คูหาเลือกตั้งขนาดกว้างพิเศษ, บริการวีลแชร์ไฟฟ้าสำหรับใช้ในหน่วย</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">อุบลราชธานี</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดอุบลราชธานี</td>
-                        <td class="p-3 border-b align-top">แว่นขยายสำหรับผู้อ่านตัวหนังสือเล็กไม่ชัด, แสงสว่างภายในคูหาเพียงพอเป็นพิเศษ</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">สงขลา</th>
-                        <td class="p-3 border-b align-top">สถานสงเคราะห์เด็กปัญญาอ่อนภาคใต้</td>
-                        <td class="p-3 border-b align-top">สื่อแนะนำการเลือกตั้งแบบเข้าใจง่าย (Easy Read), อาสาสมัครช่วยอำนวยความสะดวกเฉพาะจุด</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">สงขลา</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดสงขลา</td>
-                        <td class="p-3 border-b align-top">ทางเดินราบเรียบไร้สิ่งกีดขวาง, ระบบคิวพิเศษไม่ต้องยืนรอนาน</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">สุราษฎร์ธานี</th>
-                        <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการสุราษฎร์ธานี</td>
-                        <td class="p-3 border-b align-top">วิดีโอแนะนำภาษามือ, เจ้าหน้าที่แนะนำขั้นตอนด้วยภาษามือเบื้องต้น</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-3 border-b font-semibold whitespace-nowrap">ยะลา</th>
-                        <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดยะลา</td>
-                        <td class="p-3 border-b align-top">ระบบรักษาความปลอดภัยและการเข้าถึงที่สะดวก, อาสาสมัครช่วยเหลือตลอดเส้นทาง</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        </section>
-
-
-        <footer class="text-center text-slate-500 py-12 border-t border-slate-100">
-            <div class="max-w-screen-xl mx-auto px-4 space-y-4">
-                <div class="font-medium text-slate-600">
+<!-- Section: 22 Model Polling Stations -->
+<section aria-labelledby="unit-heading" class="mb-16" id="unit-section" tabindex="-1">
+<h2 class="text-2xl font-bold text-slate-800 mb-6" id="unit-heading"><span aria-hidden="true">📍</span> ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ</h2>
+<div class="overflow-x-auto">
+<table class="w-full max-w-5xl mx-auto text-left border border-slate-200 rounded-xl overflow-hidden"><caption class="sr-only">ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ</caption>
+<thead class="bg-slate-50">
+<tr>
+<th class="p-3 border-b font-semibold" scope="col">จังหวัด</th>
+<th class="p-3 border-b font-semibold" scope="col">สถานที่ตั้งหน่วยเลือกตั้ง</th>
+<th class="p-3 border-b font-semibold" scope="col"></th>ความช่วยเหลือพิเศษ (<span lang="en">Accessibility Features</span>)
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตภาษีเจริญ)</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านบางแค</td>
+<td class="p-3 border-b align-top">ทางลาดเข้าสู่คูหา, อาสาสมัครช่วยพยุง, ราวจับพยุงตัว, บริการวีลแชร์สำรอง</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตพญาไท)</th>
+<td class="p-3 border-b align-top">โรงพยาบาลทหารผ่านศึก</td>
+<td class="p-3 border-b align-top">ลิฟต์สำหรับคนพิการ, เตียงเคลื่อนย้ายผู้ป่วย, ทีมพยาบาลดูแลพิเศษ</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตราชเทวี)</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาและฝึกอบรมคนพิการแห่งเอเชียแปซิฟิก (APCD)</td>
+<td class="p-3 border-b align-top"></td><span lang="en">Universal Design</span> ครบวงจร, ล่ามภาษามือประจำจุด, แผ่นทาบบัตรอักษรเบรลล์
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตดินแดง)</th>
+<td class="p-3 border-b align-top">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ (พม.)</td>
+<td class="p-3 border-b align-top">พื้นที่ราบเรียบ, ระบบเสียงประกาศขั้นตอน, ช่องทางเดินกว้างพิเศษสำหรับวีลแชร์</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
+<td class="p-3 border-b align-top">สถานสงเคราะห์เด็กพิการและทางสมอง (บ้านนนทภูมิ)</td>
+<td class="p-3 border-b align-top">คูหาเลือกตั้งปรับระดับความสูงได้, อาสาสมัครที่มีทักษะสื่อสารกับคนพิการทางสติปัญญา</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
+<td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการและทุพพลภาพ (บ้านพระประแดง)</td>
+<td class="p-3 border-b align-top">รถรับส่งภายในศูนย์ไปยังคูหา, ห้องน้ำคนพิการมาตรฐานสูง</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
+<td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านเฟื่องฟ้า</td>
+<td class="p-3 border-b align-top">คูหาเลือกตั้งแบบส่วนตัวสำหรับคนพิการทางจิตเวชหรือออทิสติก, ทางลาดมีขอบกันตก</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
+<td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านราชาวดี (ชาย)</td>
+<td class="p-3 border-b align-top"></td>ป้ายสัญลักษณ์รูปภาพ (<span lang="en">Pictogram</span>) ขนาดใหญ่, อาสาสมัครนำทาง 1 ต่อ 1
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครปฐม</th>
+<td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการ (วัดไร่ขิง)</td>
+<td class="p-3 border-b align-top">แผ่นทาบบัตรเลือกตั้งอักษรเบรลล์, ผิวสัมผัสต่างระดับนำทางไปยังคูหา</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
+<td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดพระมหาไถ่ พัทยา</td>
+<td class="p-3 border-b align-top">ระบบเสียงนำทางผ่านแอปพลิเคชัน, แผ่นทาบบัตรเบรลล์ทุกหมายเลข, อาสาสมัครอ่านรายชื่อผู้สมัคร</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
+<td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการการุณยเวศม์</td>
+<td class="p-3 border-b align-top">พื้นที่จอดรถคนพิการใกล้คูหา, ทางลาดองศาต่ำพิเศษสำหรับวีลแชร์มือหมุน</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์</td>
+<td class="p-3 border-b align-top"></td>ช่องทางด่วน (<span lang="en">Fast Track</span>) สำหรับผู้สูงอายุ, เก้าอี้พักคอยพร้อมน้ำดื่มตามจุดต่างๆ
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
+<td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดภาคเหนือ</td>
+<td class="p-3 border-b align-top">คู่มือผู้สมัครแบบอักษรเบรลล์และอักษรตัวขยายใหญ่, อาสาสมัครนำทางเข้าคูหา</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">พิษณุโลก</th>
+<td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการพิษณุโลก</td>
+<td class="p-3 border-b align-top"></td>ระบบล่ามภาษามือออนไลน์ (<span lang="en">VRI</span>), คูหาเลือกตั้งที่ผู้พิการทางการเคลื่อนไหวเข้าถึงได้ง่าย
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น</td>
+<td class="p-3 border-b align-top">พื้นทางเดินกันลื่น, ราวจับสแตนเลส, บริการช่วยเหลือกรณีฉุกเฉินทางการแพทย์</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
+<td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดขอนแก่น</td>
+<td class="p-3 border-b align-top">บัตรทาบอักษรเบรลล์ 3 ภาษา, ผังจำลองหน่วยเลือกตั้งแบบสัมผัส</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครราชสีมา</th>
+<td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านแคราย</td>
+<td class="p-3 border-b align-top">คูหาเลือกตั้งขนาดกว้างพิเศษ, บริการวีลแชร์ไฟฟ้าสำหรับใช้ในหน่วย</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">อุบลราชธานี</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดอุบลราชธานี</td>
+<td class="p-3 border-b align-top">แว่นขยายสำหรับผู้อ่านตัวหนังสือเล็กไม่ชัด, แสงสว่างภายในคูหาเพียงพอเป็นพิเศษ</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
+<td class="p-3 border-b align-top">สถานสงเคราะห์เด็กปัญญาอ่อนภาคใต้</td>
+<td class="p-3 border-b align-top"></td>สื่อแนะนำการเลือกตั้งแบบเข้าใจง่าย (<span lang="en">Easy Read</span>), อาสาสมัครช่วยอำนวยความสะดวกเฉพาะจุด
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดสงขลา</td>
+<td class="p-3 border-b align-top">ทางเดินราบเรียบไร้สิ่งกีดขวาง, ระบบคิวพิเศษไม่ต้องยืนรอนาน</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สุราษฎร์ธานี</th>
+<td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการสุราษฎร์ธานี</td>
+<td class="p-3 border-b align-top">วิดีโอแนะนำภาษามือ, เจ้าหน้าที่แนะนำขั้นตอนด้วยภาษามือเบื้องต้น</td>
+</tr>
+<tr>
+<th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ยะลา</th>
+<td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดยะลา</td>
+<td class="p-3 border-b align-top">ระบบรักษาความปลอดภัยและการเข้าถึงที่สะดวก, อาสาสมัครช่วยเหลือตลอดเส้นทาง</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<footer class="text-center text-slate-500 py-12 border-t border-slate-100">
+<div class="max-w-screen-xl mx-auto px-4 space-y-4">
+<div class="font-medium text-slate-600">
                     สรุปข้อมูลนโยบายและทีมงานคนพิการสำหรับการเลือกตั้ง 8 กุมภาพันธ์ 2569
                 </div>
-                
-                <p class="text-xs leading-relaxed max-w-2xl mx-auto">
-                    วิเคราะห์ข้อมูลจากนโยบายพรรค เว็บไซต์ทางการ และรายงานการเลือกตั้ง 2569 <br>
+<p class="text-xs leading-relaxed max-w-2xl mx-auto">
+                    วิเคราะห์ข้อมูลจากนโยบายพรรค เว็บไซต์ทางการ และรายงานการเลือกตั้ง 2569 <br/>
                     ประมวลผลโดย Google Gemini ณ วันที่ 30 มกราคม 2569
                 </p>
-
-                <p class="text-xs">
-                    พบข้อมูลไม่ถูกต้อง? 
-                    <a href="mailto:ananya.kua@gmail.com" class="text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4">
+<p class="text-xs" id="contact-section" tabindex="-1">
+                    พบข้อมูลไม่ถูกต้อง?
+                    <a class="text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4" href="mailto:ananya.kua@gmail.com" aria-label="ส่งอีเมลเพื่อแจ้งปรับปรุงข้อมูล">
                         แจ้งปรับปรุงข้อมูลที่นี่
                     </a>
-                </p>
-
-                <p class="text-[10px] uppercase tracking-widest pt-4 text-slate-400">
+</p>
+<p class="text-[10px] uppercase tracking-widest pt-4 text-slate-400">
                     © 2026 Election Policy Summary Project
                 </p>
-            </div>
-        </footer>
-
-    </main>
-
-    <script>
+</div>
+</footer>
+</main>
+<script>
         window.onload = function() {
             const ctxBar = document.getElementById('allowanceChart').getContext('2d');
             
                         // Auto-wrap labels for better display on small screens
-            const labels = ['ประชาชน', 'ภูมิใจไทย', 'เพื่อไทย', 'ประชาธิปัตย์', 'ไทยสร้างไทย', 'รทสช.', 'กล้าธรรม', 'เศรษฐกิจ', 'โอกาสใหม่', 'ไทยก้าวใหม่'];
+                        const labels = ['เพื่อไทย', 'ไทยสร้างไทย', 'ประชาชน', 'รทสช.', 'ประชาธิปัตย์', 'ภูมิใจไทย', 'กล้าธรรม', 'เศรษฐกิจ', 'โอกาสใหม่', 'ไทยก้าวใหม่'];
 
             // Keep bar colors aligned with labels
-            const barColors = [
-                '#F97316',  // พรรคประชาชน
-                '#2D3E94',  // พรรคภูมิใจไทย
-                '#DC2626',  // พรรคเพื่อไทย
-                '#00ADEF',  // พรรคประชาธิปัตย์
-                '#7C3AED',  // ไทยสร้างไทย
-                '#1E1B4B',  // รวมไทยสร้างชาติ
-                '#15803D',  // กล้าธรรม
-                '#B59410',  // เศรษฐกิจ
-                '#F87077',  // โอกาสใหม่
-                '#2E2A4A'   // ไทยก้าวใหม่
+                        const barColors = [
+                '#DC2626', // เพื่อไทย
+                '#7C3AED', // ไทยสร้างไทย
+                '#F97316', // ประชาชน
+                '#1E1B4B', // รทสช.
+                '#00ADEF', // ประชาธิปัตย์
+                '#2D3E94', // ภูมิใจไทย
+                '#15803D', // กล้าธรรม
+                '#B59410', // เศรษฐกิจ
+                '#F87077', // โอกาสใหม่
+                '#2E2A4A', // ไทยก้าวใหม่
             ];
 
             // Store original values so we can toggle hide/show
-            const originalValues = [2000, 800, 3000, 1600, 3000, 2000, 800, 800, 800, 800];
+                        const originalValues = [3000, 3000, 2000, 2000, 1600, 800, 800, 800, 800, 800];
 
             const allowanceChart = new Chart(ctxBar, {
                 type: 'bar',
@@ -725,6 +740,8 @@
                                     if (context.label === 'ภูมิใจไทย') return 'ไม่มีข้อมูล';
                                     if (context.label === 'กล้าธรรม') return 'สวัสดิการแบบมีส่วนร่วม';
                                     if (context.label === 'เศรษฐกิจ') return 'เศรษฐกิจฐานรากคนพิการ';
+                                    if (context.label === 'โอกาสใหม่') return 'ไม่มีข้อมูล';
+                                    if (context.label === 'ไทยก้าวใหม่') return 'ไม่มีข้อมูล';
                                     return `เสนอ: ${context.parsed.y} บาท/เดือน`;
                                 }
                             }
@@ -759,7 +776,8 @@
                     btn.setAttribute('aria-pressed', 'false');
                     btn.setAttribute('title', 'คลิกเพื่อซ่อน/แสดงข้อมูลของพรรคนี้ในกราฟ');
 
-                    const dot = document.createElement('span');
+                    btn.setAttribute('aria-label', `ซ่อนหรือแสดงข้อมูลของ ${label} ในกราฟ`);
+const dot = document.createElement('span');
                     dot.className = 'w-3 h-3 rounded-full';
                     dot.style.backgroundColor = barColors[i];
                     dot.setAttribute('aria-hidden', 'true');
@@ -788,5 +806,5 @@
             }
 };
     </script>
-</body>
+<div class="fixed bottom-4 right-4 flex flex-col gap-2 z-50"><a class="bg-white text-slate-900 border border-slate-200 shadow px-3 py-2 rounded-lg text-sm hover:bg-slate-50" href="#quick-links" id="back-to-links" aria-label="กลับไปยังลิงก์ลัดสำหรับเลือกหัวข้อ" aria-controls="quick-links">กลับไปลิงก์ลัด</a><a class="bg-white text-slate-900 border border-slate-200 shadow px-3 py-2 rounded-lg text-sm hover:bg-slate-50" href="#main-content" aria-label="กลับไปยังเนื้อหาหลัก" aria-controls="main-content">กลับไปเนื้อหาหลัก</a></div></body>
 </html>
