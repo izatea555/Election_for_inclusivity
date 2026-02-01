@@ -114,10 +114,7 @@
         /* Make skip/quick jump targets land nicely below header */
         [tabindex="-1"]:focus { outline: none; }
         
-        /* ===== Accessible table for 22 model polling stations ===== */
-
-        .unit-table-wrap {
-        max-width: 72rem;          /* ~max-w-6xl */
+        /* ~max-w-6xl */
         margin: 0 auto;
         }
 
@@ -200,6 +197,20 @@
 
 
 
+
+
+/* Make sr-only links visible when focused (keyboard friendly) */
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+}
+
 </style>
 </head>
 <body class="overflow-x-hidden">
@@ -232,20 +243,20 @@
 <div class="card p-4 md:p-6" id="party-quick-links">
 <h3 class="text-base md:text-lg font-bold text-slate-800">ข้ามไปยังพรรคตามหมายเลข (ลิงก์ลัดในตาราง)</h3>
 <ul class="mt-3 grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-6" aria-label="ข้ามไปยังแถวพรรคหมายเลข 6 ในตารางนโยบาย">6 — รวมไทยสร้างชาติ</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-9" aria-label="ข้ามไปยังแถวพรรคหมายเลข 9 ในตารางนโยบาย">9 — เพื่อไทย</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-11" aria-label="ข้ามไปยังแถวพรรคหมายเลข 11 ในตารางนโยบาย">11 — เศรษฐกิจ</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-27" aria-label="ข้ามไปยังแถวพรรคหมายเลข 27 ในตารางนโยบาย">27 — ประชาธิปัตย์</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-37" aria-label="ข้ามไปยังแถวพรรคหมายเลข 37 ในตารางนโยบาย">37 — ภูมิใจไทย</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-42" aria-label="ข้ามไปยังแถวพรรคหมายเลข 42 ในตารางนโยบาย">42 — กล้าธรรม</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-44" aria-label="ข้ามไปยังแถวพรรคหมายเลข 44 ในตารางนโยบาย">44 — โอกาสใหม่</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-46" aria-label="ข้ามไปยังแถวพรรคหมายเลข 46 ในตารางนโยบาย">46 — พรรคประชาชน</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-48" aria-label="ข้ามไปยังแถวพรรคหมายเลข 48 ในตารางนโยบาย">48 — ไทยสร้างไทย</a></li>
-<li><a class="text-blue-700 hover:underline underline-offset-4" href="#party-49" aria-label="ข้ามไปยังแถวพรรคหมายเลข 49 ในตารางนโยบาย">49 — ไทยก้าวใหม่</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 6 รวมไทยสร้างชาติ ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-6">6 — รวมไทยสร้างชาติ</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 9 เพื่อไทย ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-9">9 — เพื่อไทย</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 11 เศรษฐกิจ ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-11">11 — เศรษฐกิจ</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 27 ประชาธิปัตย์ ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-27">27 — ประชาธิปัตย์</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 37 ภูมิใจไทย ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-37">37 — ภูมิใจไทย</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 42 กล้าธรรม ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-42">42 — กล้าธรรม</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 44 โอกาสใหม่ ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-44">44 — โอกาสใหม่</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 46 พรรคประชาชน ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-46">46 — พรรคประชาชน</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 48 ไทยสร้างไทย ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-48">48 — ไทยสร้างไทย</a></li>
+<li><a aria-label="ข้ามไปยังพรรคหมายเลข 49 ไทยก้าวใหม่ ในตารางนโยบาย" class="text-blue-700 hover:underline underline-offset-4" href="#party-49">49 — ไทยก้าวใหม่</a></li>
 </ul>
 </div>
 <div class="card overflow-hidden">
-<div class="overflow-x-auto" aria-label="ตารางนโยบาย เลื่อนได้ในแนวนอน">
+<div aria-label="ตารางนโยบาย เลื่อนได้ในแนวนอน" class="overflow-x-auto">
 <table aria-describedby="policy-table-desc" class="w-full min-w-[1400px] policy-table">
 <caption class="sr-only">ตารางเปรียบเทียบทีมงานและนโยบายด้านคนพิการของพรรคการเมือง</caption>
 <thead>
@@ -273,11 +284,6 @@
 </td>
 <td class="font-bold">1,500 - 2,000 บาท</td>
 <td class="p-3 border-b align-top">
-
-
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>เทคโนโลยี:</strong></li>อัปเกรดแอปพลิเคชัน "เป๋าตัง" เป็น <span lang="en">Super App</span> ทางการเงินเพื่อเป็นศูนย์กลางการรับสิทธิสวัสดิการแบบเบ็ดเสร็จ<li><strong>ค่าครองชีพ:</strong>ลดราคาน้ำมันและค่าพลังงานเพื่อช่วยแบ่งเบาภาระต้นทุนชีวิตของผู้ดูแลและคนพิการ</li><li><strong>ฐานข้อมูล:</strong></li>บูรณาการฐานข้อมูลกลุ่มเปราะบาง (<span lang="en">Big Data</span>) เพื่อส่งมอบความช่วยเหลือได้รวดเร็วและไม่ซ้ำซ้อน<li><strong>การยืนยันตัวตน:</strong>ผลักดันให้คนพิการได้มีบัตรประชาชนทุกคน เชื่อมโยงบัตรคนพิการ-บัตรประชาชน</li><li><strong>นักกีฬา:</strong>ดูแลสวัสดิการของนักกีฬาคนพิการ</li></ul></td>
 </tr>
 <tr class="border-pt" id="party-9">
@@ -293,11 +299,6 @@
 </td>
 <td class="font-bold">เติมรายได้ให้ถึง 3,000 บาท (MIG)</td>
 <td class="p-3 border-b align-top">
-
-
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>เทคโนโลยี:</strong>ระบบข้อมูลภาษามือ/เสียงในทุกแพลตฟอร์มรัฐ</li><li><strong>ทักษะและงาน:</strong></li>พัฒนาศูนย์การศึกษาพิเศษและเพิ่มครูเฉพาะทาง การสร้างรายได้ด้วย <span lang="en">Job Matching Platform</span> <li><strong>สิทธิมนุษยชน:</strong>ตั้งกลไกตรวจสอบการละเมิดสิทธิมนุษยชนที่เป็นอิสระสำหรับกลุ่มเปราะบาง</li><li><strong>อาคารสถานที่:</strong>ปรับปรุงตัวอาคารสถานที่และบริการต่างๆ ของหน่วยงานรัฐ ให้ทุกคนเข้าถึงกันอย่างเท่าเทียม</li><li><strong>กฎหมาย:</strong>ผลักดันกฎหมายส่งเสริม universal design และมาตรการต่างๆเพื่อสนับสนุนอย่างเป็นรูปธรรม</li></ul></td>
 </tr>
 <tr class="border-eco" id="party-11">
@@ -315,9 +316,6 @@
 </td>
 <td class="text-slate-500">เศรษฐกิจฐานรากคนพิการ</td>
 <td class="p-3 border-b align-top">
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>เศรษฐกิจ:</strong>นโยบาย "คนพิการสร้างชาติ" สนับสนุนการเข้าถึงตลาดค้าขายดิจิทัลและแหล่งเงินทุนดอกเบี้ยต่ำ ขยายฐานแรงงานเปลี่ยนคนพิการเป็นพลัง</li><li><strong>ชุมชน:</strong>พัฒนาศูนย์พัฒนาอาชีพคนพิการในระดับอำเภอเพื่อให้คนพิการไม่ต้องย้ายถิ่นฐานเข้ากรุงเทพฯ</li><li><strong>การศึกษา:</strong></li>ทุนการศึกษาพิเศษสำหรับคนพิการในสาขาที่ตลาดแรงงานสมัยใหม่ต้องการ (<span lang="en">Skill Re-training</span>)</ul></td>
 </tr>
 <tr class="border-dem" id="party-27">
@@ -333,10 +331,6 @@
 </td>
 <td class="font-bold">1,600 บาท (เบี้ยคูณสอง)</td>
 <td class="p-3 border-b align-top">
-
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>ฟื้นฟู:</strong>จัดให้มีบริการฟื้นฟูความพิการ และอุปกรณ์ช่วยการเคลื่อนไหวอย่างทั่วถึง</li><li><strong>การศึกษา:</strong>ผลักดันการศึกษาฟรีตั้งแต่แรกพบความพิการ</li><li><strong>อาคารสถานที่:</strong>50,000 บาท เพื่อบ้านปลอดภัยผู้สูงวัย และผู้พิการ ยกระดับความปลอดภัยในบ้านตั้งแต่ต้นทาง</li><li><strong>การจ้างงาน:</strong>จ้างงานคนพิการ 1% บูรณาการฐานข้อมูลคนพิการ เชื่อม “คนพิการ–งาน–นายจ้าง” ให้จ้างได้จริง ทำงานได้จริง และอยู่ได้ยั่งยืน และโครการฝึกอาชีพ สร้างรายได้</li></ul></td>
 </tr>
 <tr class="border-bjt" id="party-37">
@@ -352,7 +346,6 @@
 </td>
 <td class="text-slate-500">ไม่มีข้อมูล</td>
 <td class="p-3 border-b align-top">
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>ไม่มีข้อมูลนโยบายเรื่องคนพิการโดยตรงมีเพียงหัวข้อที่อยู่ภายใต้นโยบายอื่น และนโยบายทำต่อเนื่องจากสิ่งที่เคยดำเนินการเดิมในการเลือกตั้งครั้งก่อนเท่านั้น</strong></li></ul></td>
 </tr>
 <tr class="border-kt" id="party-42">
@@ -370,10 +363,6 @@
 </td>
 <td class="text-slate-500">สวัสดิการแบบมีส่วนร่วม</td>
 <td class="p-3 border-b align-top">
-
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>การมีส่วนร่วม:</strong>ผลักดันให้คนพิการมีบทบาทในคณะกรรมการชุดต่างๆ ของท้องถิ่นเพื่อกำหนดงบประมาณเอง</li><li><strong>อาชีพ:</strong>สนับสนุนวิสาหกิจเพื่อสังคม (SE) ที่บริหารงานโดยคนพิการให้เข้าถึงแหล่งทุนได้ง่ายขึ้น ผลักดัน สถาบันฝึกอาชีพคนพิการ</li><li><strong>สิทธิ:</strong>เน้นนโยบาย "ความเท่าเทียมในโอกาส" มากกว่าการรับบริจาคเพื่อสร้างศักดิ์ศรีความเป็นมนุษย์</li><li><strong>อาคารสถานที่:</strong>ผลักดัน หมู่บ้านคนพิการ ราคาประหยัด ผ่อนได้</li></ul></td>
 </tr>
 <tr class="border-op" id="party-44">
@@ -389,9 +378,6 @@
 </td>
 <td class="text-slate-500">ไม่มีข้อมูล</td>
 <td class="p-3 border-b align-top">
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>การจ้างงาน:</strong>เพิ่มโควตาการจ้างงานคนพิการ จาก 100:1 เป็น 50:1</li><li><strong>การเงิน:</strong>เปลี่ยนจากการสงเคราะห์ เป็น สิทธิ</li><li><strong>การศึกษา:</strong>ส่งเสริมให้โรงเรียนมี Universal design สำหรับผู้เรียนที่มีความพิการ</li></ul></td>
 </tr>
 <tr class="border-pp" id="party-46">
@@ -407,15 +393,6 @@
 </td>
 <td class="font-bold">1,200 (ถ้วนหน้า) / 2,000 (รุนแรง)</td>
 <td class="p-3 border-b align-top">
-
-
-
-
-
-
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>โครงสร้างสวัสดิการ:</strong>จัดตั้ง "ธนาคารอุปกรณ์" เพื่อสนับสนุนรถเข็นวีลแชร์ เครื่องช่วยฟัง และอุปกรณ์จำเป็นอย่างทั่วถึง</li><li><strong>การดูแล:</strong></li>ปฏิรูประบบผู้ช่วยคนพิการ (<span lang="en">Personal Assistant: PA</span>) และกำหนดสัดส่วนผู้ช่วย 1 ต่อ 1 สำหรับผู้ที่จำเป็น จัดนักบริบาลอาชีพที่หน่วยบริการปฐมภูมิ<li><strong>การศึกษา:</strong>ปฏิรูปศูนย์การศึกษาเด็กพิเศษและสร้างแพลตฟอร์มการเรียนรู้ทักษะแรงงาน เพิ่มโอกาสคนพิการเข้าสู่การทำงาน</li><li><strong>การยืนยันตัวตน:</strong>ปรับปรุงกระบวนการออกและต่ออายุบัตรคนพิการ เพื่อลดภาระคนพิการโดยเฉพาะผู้พิการติดเตียง</li><li><strong>บริการสาธารณะ:</strong>สร้างระบบขนส่งสาธารณะเพื่อทุกคน เพิ่มอำนาจและงบประมาณท้องถิ่นในการจัดบริการสาธารณะเพื่อคนพิการ</li><li><strong>สังคม:</strong>บูรณาการระบบการดูแลรายบุคคลในระดับตำบล ลดกลุ่มคนพิการตกหล่นในชุมชน</li><li><strong>การแพทย์:</strong>ลดภาวะพิการ ด้วยระบบดูแลผู้ป่วยระยะกลาง และผลิตนักกายภาพบำบัดบริการฟื้นฟูที่ รพช./รพ.สต.</li><li><strong>การเงิน:</strong>กองทุนดูแลผู้ป่วยระยะยาวและผู้มีภาวะพึ่งพิงใหม่</li><li><strong>กฎหมาย:</strong>ตรากฎหมายว่าด้วยการขจัดการเลือกปฎิบัติ</li></ul></td>
 </tr>
 <tr class="border-tst" id="party-48">
@@ -431,11 +408,6 @@
 </td>
 <td class="font-bold">3,000 บาท (ถ้วนหน้า)</td>
 <td class="p-3 border-b align-top">
-
-
-
-
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>การจ้างงาน:</strong>ตั้งเป้าจ้างงานคนพิการ 60,000 ตำแหน่ง ภายในระยะเวลา 3 ปี</li><li><strong>สภาพแวดล้อม:</strong>จัดสรรงบประมาณช่วยเหลือปรับปรุงบ้านพักอาศัยเพื่อให้คนพิการใช้ชีวิตในบ้านได้อย่างสะดวก เพิ่มผู้ดูแลคนพิการ</li><li><strong>การสื่อสาร:</strong>เพิ่มจำนวนล่ามภาษามือในหน่วยงานรัฐและสนับสนุนทุนการศึกษาสำหรับคนพิการ</li><li><strong>การดูแล:</strong>เพิ่มผู้ดูแลคนพิการ เพิ่มงบจัดซื้ออุปกรณ์ ในสถานสงเคราะห์คนพิการ</li><li><strong>การเงิน:</strong>ส่งเสริมการจัดตั้งกองทุนสงเคราะห์คนพิการ สนับสนุนทุนการศึกษาของคนพิการ</li></ul></td>
 </tr>
 <tr class="border-tns" id="party-49">
@@ -451,7 +423,6 @@
 </td>
 <td class="text-slate-500">ไม่มีข้อมูล</td>
 <td class="p-3 border-b align-top">
-
 <ul class="list-disc pl-5 space-y-1"><li><strong>ขนส่งสาธารณะ:</strong>ปรับโครงสร้างขนส่งสาธารณะ และพื้นที่สาธารณะให้เข้าถึงได้อย่างแท้จริง</li></ul></td>
 </tr>
 </tbody>
@@ -470,9 +441,9 @@
 <canvas aria-describedby="allowanceChartDesc" id="allowanceChart" role="img"></canvas>
 <p class="sr-only" id="allowanceChartDesc">กราฟแท่งแสดงเพดานเบี้ยความพิการที่เสนอ (บาทต่อเดือน) แยกตามพรรคการเมือง ข้อมูลตัวเลขอยู่ในตารางใต้กราฟ</p>
 <details class="mt-6">
-<summary class="cursor-pointer font-semibold text-white text-right" aria-controls="chart-table-wrap">ดูข้อมูลกราฟแบบตาราง (เหมาะสำหรับผู้อ่านหน้าจอ)</summary>
-<div id="chart-table-wrap" class="mt-4 overflow-x-auto rounded-xl border border-slate-200">
-                            <table class="w-full text-left">
+<summary aria-controls="chart-table-wrap" class="cursor-pointer font-semibold text-white text-right">ดูข้อมูลกราฟแบบตาราง (เหมาะสำหรับผู้อ่านหน้าจอ)</summary>
+<div class="mt-4 overflow-x-auto rounded-xl border border-slate-200" id="chart-table-wrap">
+<table class="w-full text-left">
 <caption class="sr-only">ตารางข้อมูลเพดานเบี้ยความพิการที่เสนอ (บาทต่อเดือน) ตามพรรคการเมือง</caption>
 <thead class="bg-slate-50">
 <tr>
@@ -626,167 +597,139 @@
 </table>
 </div>
 </section>
-
 <!-- Section: 22 Model Polling Stations -->
- <section id="unit-section" tabindex="-1" aria-labelledby="unit-heading" class="mb-16">
-  <h2 id="unit-heading" class="text-2xl font-bold text-slate-800 mb-6">
-    <span aria-hidden="true">📍</span>
+<section aria-labelledby="unit-heading" class="mb-16" id="unit-section" tabindex="-1">
+<h2 class="text-2xl font-bold text-slate-800 mb-6" id="unit-heading">
+<span aria-hidden="true">📍</span>
     ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ
   </h2>
-
-  <!-- Short instructions for screen reader users -->
-  <p id="unit-table-desc" class="sr-only">
+<!-- Short instructions for screen reader users -->
+<p class="sr-only" id="unit-table-desc">
     ตารางนี้มี 3 คอลัมน์ ได้แก่ จังหวัด, สถานที่ตั้งหน่วยเลือกตั้ง, และความช่วยเหลือพิเศษ
     ตารางสามารถเลื่อนในแนวนอนได้ หากหน้าจอแคบ
   </p>
-
-  <!-- Optional: visible helper for everyone -->
-  <p class="text-sm text-slate-600 mb-4">
+<!-- Optional: visible helper for everyone -->
+<p class="text-sm text-slate-600 mb-4">
     หมายเหตุ: หากใช้มือถือ สามารถเลื่อนตารางในแนวนอนได้
   </p>
-
-  <!-- Skip link: lets screen reader/keyboard users jump past the table -->
-  <a href="#after-unit-table" class="text-sm text-blue-700 hover:underline underline-offset-4">
+<!-- Skip link: lets screen reader/keyboard users jump past the table -->
+<a class="sr-only sr-only-focusable text-blue-700 underline underline-offset-4" href="#after-unit-table">
     ข้ามตารางนี้
   </a>
-
-  <div class="unit-table-wrap mt-3">
-    <div class="table-scroll" aria-label="ตารางหน่วยเลือกตั้งต้นแบบ เลื่อนได้ในแนวนอน">
-      <table class="unit-table" aria-describedby="unit-table-desc">
-        <caption class="sr-only">
+<div class="unit-table-wrap mt-3">
+<div aria-label="ตารางหน่วยเลือกตั้งต้นแบบ เลื่อนได้ในแนวนอน" class="table-scroll">
+<table aria-describedby="unit-table-desc" class="w-full min-w-[900px] text-left border border-slate-200 rounded-xl overflow-hidden">
+<caption class="sr-only">
           ตารางรายชื่อหน่วยเลือกตั้งต้นแบบ 22 แห่งที่อำนวยความสะดวกสำหรับคนพิการ
         </caption>
-
-        <thead>
-          <tr>
-            <th scope="col">จังหวัด</th>
-            <th scope="col">สถานที่ตั้งหน่วยเลือกตั้ง</th>
-            <th scope="col">ความช่วยเหลือพิเศษ (Accessibility Features)</th>
-          </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตภาษีเจริญ)</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านบางแค</td>
-            <td class="p-3 border-b align-top">ทางลาดเข้าสู่คูหา, อาสาสมัครช่วยพยุง, ราวจับพยุงตัว, บริการวีลแชร์สำรอง</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตพญาไท)</th>
-            <td class="p-3 border-b align-top">โรงพยาบาลทหารผ่านศึก</td>
-            <td class="p-3 border-b align-top">ลิฟต์สำหรับคนพิการ, เตียงเคลื่อนย้ายผู้ป่วย, ทีมพยาบาลดูแลพิเศษ</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตราชเทวี)</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาและฝึกอบรมคนพิการแห่งเอเชียแปซิฟิก (APCD)</td>
-            <td class="p-3 border-b align-top"></td><span lang="en">Universal Design</span> ครบวงจร, ล่ามภาษามือประจำจุด, แผ่นทาบบัตรอักษรเบรลล์
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">กรุงเทพฯ (เขตดินแดง)</th>
-            <td class="p-3 border-b align-top">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ (พม.)</td>
-            <td class="p-3 border-b align-top">พื้นที่ราบเรียบ, ระบบเสียงประกาศขั้นตอน, ช่องทางเดินกว้างพิเศษสำหรับวีลแชร์</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
-            <td class="p-3 border-b align-top">สถานสงเคราะห์เด็กพิการและทางสมอง (บ้านนนทภูมิ)</td>
-            <td class="p-3 border-b align-top">คูหาเลือกตั้งปรับระดับความสูงได้, อาสาสมัครที่มีทักษะสื่อสารกับคนพิการทางสติปัญญา</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นนทบุรี</th>
-            <td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการและทุพพลภาพ (บ้านพระประแดง)</td>
-            <td class="p-3 border-b align-top">รถรับส่งภายในศูนย์ไปยังคูหา, ห้องน้ำคนพิการมาตรฐานสูง</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
-            <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านเฟื่องฟ้า</td>
-            <td class="p-3 border-b align-top">คูหาเลือกตั้งแบบส่วนตัวสำหรับคนพิการทางจิตเวชหรือออทิสติก, ทางลาดมีขอบกันตก</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ปทุมธานี</th>
-            <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านราชาวดี (ชาย)</td>
-            <td class="p-3 border-b align-top"></td>ป้ายสัญลักษณ์รูปภาพ (<span lang="en">Pictogram</span>) ขนาดใหญ่, อาสาสมัครนำทาง 1 ต่อ 1
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครปฐม</th>
-            <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการ (วัดไร่ขิง)</td>
-            <td class="p-3 border-b align-top">แผ่นทาบบัตรเลือกตั้งอักษรเบรลล์, ผิวสัมผัสต่างระดับนำทางไปยังคูหา</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
-            <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดพระมหาไถ่ พัทยา</td>
-            <td class="p-3 border-b align-top">ระบบเสียงนำทางผ่านแอปพลิเคชัน, แผ่นทาบบัตรเบรลล์ทุกหมายเลข, อาสาสมัครอ่านรายชื่อผู้สมัคร</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ชลบุรี</th>
-            <td class="p-3 border-b align-top">สถานสงเคราะห์คนพิการการุณยเวศม์</td>
-            <td class="p-3 border-b align-top">พื้นที่จอดรถคนพิการใกล้คูหา, ทางลาดองศาต่ำพิเศษสำหรับวีลแชร์มือหมุน</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์</td>
-            <td class="p-3 border-b align-top"></td>ช่องทางด่วน (<span lang="en">Fast Track</span>) สำหรับผู้สูงอายุ, เก้าอี้พักคอยพร้อมน้ำดื่มตามจุดต่างๆ
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">เชียงใหม่</th>
-            <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดภาคเหนือ</td>
-            <td class="p-3 border-b align-top">คู่มือผู้สมัครแบบอักษรเบรลล์และอักษรตัวขยายใหญ่, อาสาสมัครนำทางเข้าคูหา</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">พิษณุโลก</th>
-            <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการพิษณุโลก</td>
-            <td class="p-3 border-b align-top"></td>ระบบล่ามภาษามือออนไลน์ (<span lang="en">VRI</span>), คูหาเลือกตั้งที่ผู้พิการทางการเคลื่อนไหวเข้าถึงได้ง่าย
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น</td>
-            <td class="p-3 border-b align-top">พื้นทางเดินกันลื่น, ราวจับสแตนเลส, บริการช่วยเหลือกรณีฉุกเฉินทางการแพทย์</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ขอนแก่น</th>
-            <td class="p-3 border-b align-top">โรงเรียนสอนคนตาบอดขอนแก่น</td>
-            <td class="p-3 border-b align-top">บัตรทาบอักษรเบรลล์ 3 ภาษา, ผังจำลองหน่วยเลือกตั้งแบบสัมผัส</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">นครราชสีมา</th>
-            <td class="p-3 border-b align-top">สถานคุ้มครองและพัฒนาคนพิการบ้านแคราย</td>
-            <td class="p-3 border-b align-top">คูหาเลือกตั้งขนาดกว้างพิเศษ, บริการวีลแชร์ไฟฟ้าสำหรับใช้ในหน่วย</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">อุบลราชธานี</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดอุบลราชธานี</td>
-            <td class="p-3 border-b align-top">แว่นขยายสำหรับผู้อ่านตัวหนังสือเล็กไม่ชัด, แสงสว่างภายในคูหาเพียงพอเป็นพิเศษ</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
-            <td class="p-3 border-b align-top">สถานสงเคราะห์เด็กปัญญาอ่อนภาคใต้</td>
-            <td class="p-3 border-b align-top"></td>สื่อแนะนำการเลือกตั้งแบบเข้าใจง่าย (<span lang="en">Easy Read</span>), อาสาสมัครช่วยอำนวยความสะดวกเฉพาะจุด
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สงขลา</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดสงขลา</td>
-            <td class="p-3 border-b align-top">ทางเดินราบเรียบไร้สิ่งกีดขวาง, ระบบคิวพิเศษไม่ต้องยืนรอนาน</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">สุราษฎร์ธานี</th>
-            <td class="p-3 border-b align-top">ศูนย์ส่งเสริมอาชีพคนพิการสุราษฎร์ธานี</td>
-            <td class="p-3 border-b align-top">วิดีโอแนะนำภาษามือ, เจ้าหน้าที่แนะนำขั้นตอนด้วยภาษามือเบื้องต้น</td>
-            </tr>
-            <tr>
-            <th class="p-3 border-b font-semibold whitespace-nowrap" scope="row">ยะลา</th>
-            <td class="p-3 border-b align-top">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดยะลา</td>
-            <td class="p-3 border-b align-top">ระบบรักษาความปลอดภัยและการเข้าถึงที่สะดวก, อาสาสมัครช่วยเหลือตลอดเส้นทาง</td>
-            </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- End anchor for skip link -->
-  <div id="after-unit-table" tabindex="-1"></div>
+<thead class="bg-slate-100">
+<tr>
+<th class="p-4 text-sm font-bold text-slate-800 border-b border-slate-300" scope="col">จังหวัด</th>
+<th class="p-4 text-sm font-bold text-slate-800 border-b border-slate-300" scope="col">สถานที่ตั้งหน่วยเลือกตั้ง</th>
+<th class="p-4 text-sm font-bold text-slate-800 border-b border-slate-300" scope="col">ความช่วยเหลือพิเศษ (Accessibility Features)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">กรุงเทพฯ (เขตภาษีเจริญ)</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านบางแค</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ทางลาดเข้าสู่คูหา, อาสาสมัครช่วยพยุง, ราวจับพยุงตัว, บริการวีลแชร์สำรอง</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">กรุงเทพฯ (เขตพญาไท)</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">โรงพยาบาลทหารผ่านศึก</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ลิฟต์สำหรับคนพิการ, เตียงเคลื่อนย้ายผู้ป่วย, ทีมพยาบาลดูแลพิเศษ</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">กรุงเทพฯ (เขตราชเทวี)</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาและฝึกอบรมคนพิการแห่งเอเชียแปซิฟิก (APCD)</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200"><span lang="en">Universal Design</span> ครบวงจร, ล่ามภาษามือประจำจุด, แผ่นทาบบัตรอักษรเบรลล์
+            </td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">กรุงเทพฯ (เขตดินแดง)</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ (พม.)</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">พื้นที่ราบเรียบ, ระบบเสียงประกาศขั้นตอน, ช่องทางเดินกว้างพิเศษสำหรับวีลแชร์</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">นนทบุรี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานสงเคราะห์เด็กพิการและทางสมอง (บ้านนนทภูมิ)</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">คูหาเลือกตั้งปรับระดับความสูงได้, อาสาสมัครที่มีทักษะสื่อสารกับคนพิการทางสติปัญญา</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">นนทบุรี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานสงเคราะห์คนพิการและทุพพลภาพ (บ้านพระประแดง)</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">รถรับส่งภายในศูนย์ไปยังคูหา, ห้องน้ำคนพิการมาตรฐานสูง</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ปทุมธานี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานคุ้มครองและพัฒนาคนพิการบ้านเฟื่องฟ้า</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">คูหาเลือกตั้งแบบส่วนตัวสำหรับคนพิการทางจิตเวชหรือออทิสติก, ทางลาดมีขอบกันตก</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ปทุมธานี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานคุ้มครองและพัฒนาคนพิการบ้านราชาวดี (ชาย)</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ป้ายสัญลักษณ์รูปภาพ (<span lang="en">Pictogram</span>) ขนาดใหญ่, อาสาสมัครนำทาง 1 ต่อ 1
+            </td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">นครปฐม</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์ส่งเสริมอาชีพคนพิการ (วัดไร่ขิง)</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">แผ่นทาบบัตรเลือกตั้งอักษรเบรลล์, ผิวสัมผัสต่างระดับนำทางไปยังคูหา</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ชลบุรี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">โรงเรียนสอนคนตาบอดพระมหาไถ่ พัทยา</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ระบบเสียงนำทางผ่านแอปพลิเคชัน, แผ่นทาบบัตรเบรลล์ทุกหมายเลข, อาสาสมัครอ่านรายชื่อผู้สมัคร</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ชลบุรี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานสงเคราะห์คนพิการการุณยเวศม์</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">พื้นที่จอดรถคนพิการใกล้คูหา, ทางลาดองศาต่ำพิเศษสำหรับวีลแชร์มือหมุน</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">เชียงใหม่</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ช่องทางด่วน (<span lang="en">Fast Track</span>) สำหรับผู้สูงอายุ, เก้าอี้พักคอยพร้อมน้ำดื่มตามจุดต่างๆ
+            </td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">เชียงใหม่</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">โรงเรียนสอนคนตาบอดภาคเหนือ</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">คู่มือผู้สมัครแบบอักษรเบรลล์และอักษรตัวขยายใหญ่, อาสาสมัครนำทางเข้าคูหา</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">พิษณุโลก</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์ส่งเสริมอาชีพคนพิการพิษณุโลก</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ระบบล่ามภาษามือออนไลน์ (<span lang="en">VRI</span>), คูหาเลือกตั้งที่ผู้พิการทางการเคลื่อนไหวเข้าถึงได้ง่าย
+            </td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ขอนแก่น</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุขอนแก่น</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">พื้นทางเดินกันลื่น, ราวจับสแตนเลส, บริการช่วยเหลือกรณีฉุกเฉินทางการแพทย์</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ขอนแก่น</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">โรงเรียนสอนคนตาบอดขอนแก่น</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">บัตรทาบอักษรเบรลล์ 3 ภาษา, ผังจำลองหน่วยเลือกตั้งแบบสัมผัส</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">นครราชสีมา</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานคุ้มครองและพัฒนาคนพิการบ้านแคราย</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">คูหาเลือกตั้งขนาดกว้างพิเศษ, บริการวีลแชร์ไฟฟ้าสำหรับใช้ในหน่วย</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">อุบลราชธานี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดอุบลราชธานี</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">แว่นขยายสำหรับผู้อ่านตัวหนังสือเล็กไม่ชัด, แสงสว่างภายในคูหาเพียงพอเป็นพิเศษ</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">สงขลา</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สถานสงเคราะห์เด็กปัญญาอ่อนภาคใต้</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">สื่อแนะนำการเลือกตั้งแบบเข้าใจง่าย (<span lang="en">Easy Read</span>), อาสาสมัครช่วยอำนวยความสะดวกเฉพาะจุด
+            </td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">สงขลา</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดสงขลา</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ทางเดินราบเรียบไร้สิ่งกีดขวาง, ระบบคิวพิเศษไม่ต้องยืนรอนาน</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">สุราษฎร์ธานี</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์ส่งเสริมอาชีพคนพิการสุราษฎร์ธานี</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">วิดีโอแนะนำภาษามือ, เจ้าหน้าที่แนะนำขั้นตอนด้วยภาษามือเบื้องต้น</td></tr>
+<tr class="odd:bg-white even:bg-slate-50">
+<th class="p-4 text-sm text-slate-800 align-top border-b border-slate-200 font-semibold" scope="row">ยะลา</th>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุจังหวัดยะลา</td>
+<td class="p-4 text-sm text-slate-800 align-top border-b border-slate-200">ระบบรักษาความปลอดภัยและการเข้าถึงที่สะดวก, อาสาสมัครช่วยเหลือตลอดเส้นทาง</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- End anchor for skip link -->
+<div id="after-unit-table" tabindex="-1"></div>
 </section>
-
-
-
 <footer class="text-center text-slate-500 py-12 border-t border-slate-100">
 <div class="max-w-screen-xl mx-auto px-4 space-y-4">
 <div class="font-medium text-slate-600">
@@ -798,7 +741,7 @@
                 </p>
 <p class="text-xs" id="contact-section" tabindex="-1">
                     พบข้อมูลไม่ถูกต้อง?
-                    <a class="text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4" href="mailto:ananya.kua@gmail.com" aria-label="ส่งอีเมลเพื่อแจ้งปรับปรุงข้อมูล">
+                    <a aria-label="ส่งอีเมลเพื่อแจ้งปรับปรุงข้อมูล" class="text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4" href="mailto:ananya.kua@gmail.com">
                         แจ้งปรับปรุงข้อมูลที่นี่
                     </a>
 </p>
@@ -925,5 +868,5 @@ const dot = document.createElement('span');
             }
 };
     </script>
-<div class="fixed bottom-4 right-4 flex flex-col gap-2 z-50"><a class="bg-white text-slate-900 border border-slate-200 shadow px-3 py-2 rounded-lg text-sm hover:bg-slate-50" href="#quick-links" id="back-to-links" aria-label="กลับไปยังลิงก์ลัดสำหรับเลือกหัวข้อ" aria-controls="quick-links">กลับไปลิงก์ลัด</a><a class="bg-white text-slate-900 border border-slate-200 shadow px-3 py-2 rounded-lg text-sm hover:bg-slate-50" href="#main-content" aria-label="กลับไปยังเนื้อหาหลัก" aria-controls="main-content">กลับไปเนื้อหาหลัก</a></div></body>
+<div class="fixed bottom-4 right-4 flex flex-col gap-2 z-50"><a aria-controls="quick-links" aria-label="กลับไปยังลิงก์ลัดสำหรับเลือกหัวข้อ" class="bg-white text-slate-900 border border-slate-200 shadow px-3 py-2 rounded-lg text-sm hover:bg-slate-50" href="#quick-links" id="back-to-links">กลับไปลิงก์ลัด</a><a aria-controls="main-content" aria-label="กลับไปยังเนื้อหาหลัก" class="bg-white text-slate-900 border border-slate-200 shadow px-3 py-2 rounded-lg text-sm hover:bg-slate-50" href="#main-content">กลับไปเนื้อหาหลัก</a></div></body>
 </html>
